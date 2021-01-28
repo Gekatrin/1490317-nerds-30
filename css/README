@@ -1,9 +1,217 @@
-Папка для стилевых файлов.
+:root { 
+    --basic-white:#FFFFFF; 
+    --basic-black:#000000; 
+    --basic-extra-light:#EEEEEE;
+    --basic-dark:#888888;
+    --basic-green:#00CA74;
+    --basic-yellow:#EFC849;
+    --basic-red:#FB565A; 
+   }
 
---
+   body {
+       min-width: 1440px;
+       margin: 0;
+       padding: 0;
+       font-family: "Roboto", Arial, sans-serif;
+       font-size:16px;
+       line-height: 24px;
+       font-weight:400;
+       color: var(--basic-black);
+       text-transform: none;
+       background-color: var(--basic-black);
+       background-color:var(--basic-white) ;
+       background-position: top center;
+       background-repeat: no-repeat;
+     }
 
-Пример структуры файлов:
+     a {
+       text-decoration: none;
+     }
 
-css/
-| - style.css
-| - [другие *.css файлы]
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+
+     .site-navigation {
+       font-size: 16px;
+       line-height: 30px;
+       color: var(--basic-black);
+       list-style: none;
+       text-transform: uppercase;
+         }
+        .site-cart {
+        text-transform: uppercase;  
+        }
+
+         .site-navigation-current a:not([href]) {
+           background-color: var(--basic-white);
+         }
+
+         .site-navigation a,
+         .site-cart a {
+           color: var(--basic-black);
+         }
+
+         .main-header a:hover,
+         .site-cart a:hover {
+         color: var(--basic-red);
+         }
+
+         .main-header a:focus,
+         .site-cart a:focus {
+         color: var(--basic-black);
+         opacity: 0.3;
+         }
+
+
+         h1 {
+             display: none;
+         }
+         .services h2 {
+           font-size: 55px;  
+           line-height: 55px;
+         }
+
+
+         .know-more {
+             background-color: var(--basic-red);
+             width: 240px;
+             height: 50px;
+             color: var(--basic-white);
+             text-align: center;
+             font-size: 16px;
+             line-height: 18px;
+             text-transform: uppercase;
+             left: 140px;
+             top: 415px;
+             border-radius: 3px;
+         }
+
+        .site-navigation a:hover,
+        .site-cart a:hover {
+         color: var(--basic-red);
+             }
+
+        .site-navigation a:active,
+        .site-cart a:active {
+          color: var(--basic-green);
+          }
+
+        .site-navigation a:link,
+        .site-cart a:link {
+        color: var(--basic-black);
+         }
+        .site-navigation a:visited,
+        .site-cart a:visited {
+        color: var(--basic-black);
+        opacity: 0.3;
+        }
+
+        .web-site .order:hover {
+        background-color:#E74246;
+        }
+        .web-site .order:active{
+        background-color: #D7373B;;
+        box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);    
+
+        }
+        .app .order:hover {
+        background-color: #00BC6C;   
+        }
+        .app .order:active {
+        background-color: #00AA62;
+        box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+        }
+
+        .presentation .order:hover{
+        background-color: #EAB534; 
+        }
+        .presentation .order:active{
+        background-color: #E5A722;;
+        box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+        }
+         .know-more a {
+        color: var(--basic-white);
+         }
+         .main-navigation-wrapper {
+         background-color: var(--basic-extra-light);
+         width: 1440px;
+         height: 416;
+         }
+         .wrapper {
+             background-image: url('https://via.placeholder.com/150x100');
+             position: absolute;
+             width: 760px;
+             height: 431;
+             left: 537px;
+             top: 114px;
+         }
+         .web-site a{
+        color: var(--basic-white);    
+         }
+         .web-site .order {
+           background-color: var(--basic-red);
+           width: 160px;
+           height: 50px;
+           border-radius: 3px;
+           color: var(--basic-white);
+         }
+
+         .app .order {
+           background-color: var(--basic-green);
+           width: 160px;
+           height: 50px;
+           border-radius: 3px;
+           color: var(--basic-white); 
+           }
+         .presentation .order {
+           background-color: var(--basic-yellow);
+           width: 160px;
+           height: 50px;
+           border-radius: 3px;
+           color: var(--basic-white);
+         }
+         .items {
+             text-transform: uppercase;
+         }
+         .items h2+p {
+            text-transform:none;   
+         }
+         .about-us h2 {
+             display: none;
+         }
+       .about-us p:first-child{
+         font-size: 45px;
+         line-height: 45px;
+       }
+       .advantages p{
+           text-transform: uppercase;
+        }
+        .footer-address {
+         color: #666666;    
+        }
+
+       .social {
+        list-style: none;
+
+          }
+        .social a {
+           color: var(--basic-black);
+        }  
+        .logo-background {
+          height:81px;
+          width:81px; 
+          background-color: var(--basic-extra-light);
+          border-radius: 50%;
+          position: relative;
+
+        }
+
+        .contact-us {
+          color: var(--basic-black);
+            }
+
+        .visually-hidden {
+        display: none;
+        }
