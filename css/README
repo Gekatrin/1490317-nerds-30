@@ -108,6 +108,10 @@
         opacity: 0.3;
         }
 
+        .wrapper {
+        background-image: url(img/nerds-index-slide1.jpg);
+        }
+
         .web-site .order:hover {
         background-color:#E74246;
         }
@@ -204,12 +208,22 @@
           width:81px; 
           background-color: var(--basic-extra-light);
           border-radius: 50%;
-          position: relative;
+
 
         }
 
         .contact-us {
-          color: var(--basic-black);
+          color: var(--basic-white);
+          background-color: var(--basic-red);
+          border-radius: 3px;
+          width:  219px;
+          height: 50px;
+          color: var(--basic-white);
+          text-align: center;
+          font-size: 16px;
+          line-height: 18px;
+          text-transform: uppercase;
+
             }
 
         .visually-hidden {

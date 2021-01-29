@@ -4,16 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title> Интернет магазин «Nerds»</title>
+    <link rel="stylesheet" href="<link href="
+        https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
     <header class="main-header">
+        <a class="main-header-logo">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="nerds-logo">
+        </a>
         <ul class="navigation">
             <li><a href="">Студия</a></li>
             <li><a href="">Клиенты</a></li>
             <li><a href="">Магазин</a></li>
             <li><a href="">Контакты </a></li>
-         
+
         </ul>
         <a href=""> КОРЗИНА </a>
     </header>
@@ -75,6 +86,7 @@
                     <label for="sedona-slide2"></label>
                     <label for="sedona-slide3"></label>
                 </div>
+                <img src="img/img-sedona.jpg" width="359" height="578" alt="sedona">
             </div>
             <div class="pink">
                 <input type="radio" name="point" id="pink-slide1" checked>
@@ -90,6 +102,7 @@
                     <label for="pink-slide2"></label>
                     <label for="pink-slide3"></label>
                 </div>
+                <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
             </div>
             <div class="borodinski">
                 <input type="radio" name="point" id="borodinski-slide1" checked>
@@ -105,6 +118,7 @@
                     <label for="borodinski-slide2"></label>
                     <label for="borodinski-slide3"></label>
                 </div>
+                <img src="img/img-barbershop.jpg" width="358" height="578" alt="barbershop">
             </div>
             <div class="mishka">
                 <input type="radio" name="point" id="mishka-slide1" checked>
@@ -120,6 +134,7 @@
                     <label for="mishka-slide2"></label>
                     <label for="mishka-slide3"></label>
                 </div>
+                <img src="img/img-mishka.jpg" width="359" height="578" alt="mishka">
             </div>
             <div class="a-study">
                 <input type="radio" name="point" id="a-study-slide1" checked>
@@ -135,6 +150,7 @@
                     <label for="a-study-slide2"></label>
                     <label for="a-study-slide3"></label>
                 </div>
+                <img src="img/img-aplus.jpg" width="358" height="578" alt="a-study">
             </div>
             <div class="kvast">
                 <input type="radio" name="point" id="kvast-slide1" checked>
@@ -150,6 +166,7 @@
                     <label for="kvast-slide2"></label>
                     <label for="kvast-slide3"></label>
                 </div>
+                <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
             </div>
         </section>
         <div>
@@ -162,21 +179,28 @@
         </div>
     </main>
     <footer>
-        <div><img src="https://via.placeholder.com/150x100" alt=""></div>
+        <div><img src="img/map.jpg" width="1440" height="416" alt="map"> </div>
+        <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
         <div>
             <p>NЁRDS DESIGN STUDIO</p>
             <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
                 тел. +7 (812) 275-75-75</p>
         </div>
-        <div>
+        <div class="contact-us">
             <a href="#">Напишите нам</a>
         </div>
-        <ul>
-            <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="">
+        <ul class="social">
+            <li><a class="social-button" href="#"><img src="img/logo-circle.svg" alt="logo-circle"><span
+                        class="visually-hidden">Вконтакте
+                    </span>
                 </a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="">
+            <li><a class="social-button" href="#"><img src="img/logo-circle.svg" alt="logo-circle"><span
+                        class="visually-hidden">Фейсбук</span>
                 </a></li>
-            <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="">
+            <li><a class="social-button" href="#"><img src="img/logo-circle.svg" alt="logo-circle"><span
+                        class="visually-hidden">Инстаграмм</span>
+                    <div class="logo">
+                    </div>
                 </a></li>
         </ul>
         <p> Давайте дружить, это выгодно!<br> </p>
