@@ -40,8 +40,12 @@
        list-style: none;
        text-transform: uppercase;
          }
+
         .site-cart {
         text-transform: uppercase;  
+        position: absolute;
+        left: 1225px;
+        top: 75px;
         }
 
          .site-navigation-current a:not([href]) {
@@ -52,6 +56,17 @@
          .site-cart a {
            color: var(--basic-black);
          }
+
+         .site-navigation li {
+           display: inline; 
+           margin-right: 45px;
+            
+         }
+         
+         .site-navigation li:first-child {
+           margin-left: 500px;
+         }
+
 
          .main-header a:hover,
          .site-cart a:hover {
@@ -108,8 +123,22 @@
         opacity: 0.3;
         }
 
-        .wrapper {
-        background-image: url(img/nerds-index-slide1.jpg);
+       .first-header {
+        background-color: var(--basic-extra-light);
+        height:114px; 
+        width:1440px; 
+
+        }
+
+        .second-header {
+        background-color: var(--basic-extra-light);
+        height:241px; 
+        width:1440px;
+        text-align: center;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 55px;
+        font-weight:500;
+        line-height: 55px;
         }
 
         .web-site .order:hover {
@@ -141,16 +170,30 @@
          .main-navigation-wrapper {
          background-color: var(--basic-extra-light);
          width: 1440px;
-         height: 416;
+         height: 416px;
          }
-         .wrapper {
-             background-image: url('https://via.placeholder.com/150x100');
-             position: absolute;
-             width: 760px;
-             height: 431;
-             left: 537px;
-             top: 114px;
-         }
+
+       .wrapper {
+        background-color:  var(--basic-extra-light);
+        background-image: url(img/nerds-index-slide1.jpg);
+        width: 760px;
+        height: 431px;
+        left: 537px;
+        top: 114px;
+        position: absolute;
+        
+       }
+       .container-wrapper {
+        background-color: var(--basic-extra-light);
+        width: 1440px;
+        height: 431px; 
+       }
+       .price-range{
+        background-color: var(--basic-extra-light);
+        width: 260px;
+        height: 80px; 
+       }
+
          .web-site a{
         color: var(--basic-white);    
          }
@@ -193,7 +236,11 @@
            text-transform: uppercase;
         }
         .footer-address {
-         color: #666666;    
+         color: var(--basic-black);    
+         background-color: var(--basic-white);  
+         width: 319px;
+         height:308px;
+         text-align: center; 
         }
 
        .social {
@@ -223,9 +270,27 @@
           font-size: 16px;
           line-height: 18px;
           text-transform: uppercase;
+          margin-left:50px; 
+          display:inline-block;
 
             }
 
         .visually-hidden {
         display: none;
         }
+
+        .sedona {
+         background-color: var(--basic-dark);
+         width:360px;
+         height:40px;
+        }
+
+
+
+        .borodinski, .pink, .mishka, .a-study, .kvast {
+         background-color: var(--basic-extra-light);
+         width:360px;
+         height:40px;          
+
+
+
