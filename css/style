@@ -174,7 +174,7 @@
          }
 
        .wrapper {
-        background-color:  var(--basic-extra-light);
+        background-color:  var(--basic-dark);
         background-image: url(img/nerds-index-slide1.jpg);
         width: 760px;
         height: 431px;
