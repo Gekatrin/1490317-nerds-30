@@ -1,3 +1,4 @@
+/*Основные*/
 :root { 
     --basic-white:#FFFFFF; 
     --basic-black:#000000; 
@@ -33,6 +34,21 @@
        height: auto;
      }
 
+     @font-face {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      src: local("Roboto"),
+      url("/fonts/roboto.woff2") format("woff2"),
+      url("/fonts/roboto.woff") format("woff");
+    }
+/*Header*/
+
+.main-header-logo  {
+  display: block;
+  margin-left: 140px;
+
+}
      .site-navigation {
        font-size: 16px;
        line-height: 30px;
@@ -78,7 +94,65 @@
          color: var(--basic-black);
          opacity: 0.3;
          }
+         .site-navigation a:hover,
+         .site-cart a:hover {
+          color: var(--basic-red);
+              }
+ 
+         .site-navigation a:active,
+         .site-cart a:active {
+           color: var(--basic-green);
+           }
+ 
+         .site-navigation a:link,
+         .site-cart a:link {
+         color: var(--basic-black);
+          }
+         .site-navigation a:visited,
+         .site-cart a:visited {
+         color: var(--basic-black);
+         opacity: 0.3;
+         }
+ 
+        .first-header {
+         background-color: var(--basic-extra-light);
+         height:114px; 
+         width:1440px; 
+         margin-bottom: -50px;
+ 
+         }
+/*Services*/
+         .second-header {
+         background-color: var(--basic-extra-light);
+         height:431px; 
+         width:1440px;
+         text-align: center;
+         font-family: "Roboto", Arial, sans-serif;
+         font-size: 55px;
+         font-weight:500;
+         line-height: 55px;
+         display: flex;
+         flex-direction: column;
+         justify-content:space-around;
+         }
 
+         .second-header span {
+         text-align: center; 
+         margin-top: 50px; 
+        
+         }
+         .services-slogan {
+           display: block; 
+           margin-left: 140px;
+           font-size: 55px;
+           line-height: 55px;
+         }
+         .services-slogan-description {
+          display: block; 
+          margin-left: 140px; 
+          font-size: 15px;
+          line-height: 24px;
+         }
 
          h1 {
              display: none;
@@ -87,59 +161,42 @@
            font-size: 55px;  
            line-height: 55px;
          }
+         .wrapper {
+          background-color:  var(--basic-dark);
+          background-image: url(img/nerds-index-slide1.jpg);
+          width: 760px;
+          height: 427px;
+          left: 537px;
+          top: 114px;
+          position: absolute;
+          right: 143px;
 
-
-         .know-more {
-             background-color: var(--basic-red);
-             width: 240px;
-             height: 50px;
-             color: var(--basic-white);
-             text-align: center;
-             font-size: 16px;
-             line-height: 18px;
-             text-transform: uppercase;
-             left: 140px;
-             top: 415px;
-             border-radius: 3px;
+  
+         }
+         .container-wrapper {
+          background-color: var(--basic-extra-light);
+          width: 1440px;
+          height: 431px; 
+         
          }
 
-        .site-navigation a:hover,
-        .site-cart a:hover {
-         color: var(--basic-red);
-             }
-
-        .site-navigation a:active,
-        .site-cart a:active {
-          color: var(--basic-green);
-          }
-
-        .site-navigation a:link,
-        .site-cart a:link {
-        color: var(--basic-black);
+        .know-more {
+          background-color: var(--basic-red);
+          width: 240px;
+          height: 50px;
+          color: var(--basic-white);
+          text-align: center;
+          font-size: 16px;
+          line-height: 18px;
+          text-transform: uppercase;
+          left: 140px;
+          top: 415px;
+          border-radius: 3px;
+          margin-left: 140px;
+          display: flex;
+          justify-content: space-around;
          }
-        .site-navigation a:visited,
-        .site-cart a:visited {
-        color: var(--basic-black);
-        opacity: 0.3;
-        }
 
-       .first-header {
-        background-color: var(--basic-extra-light);
-        height:114px; 
-        width:1440px; 
-
-        }
-
-        .second-header {
-        background-color: var(--basic-extra-light);
-        height:241px; 
-        width:1440px;
-        text-align: center;
-        font-family: "Roboto", Arial, sans-serif;
-        font-size: 55px;
-        font-weight:500;
-        line-height: 55px;
-        }
 
         .web-site .order:hover {
         background-color:#E74246;
@@ -171,23 +228,10 @@
          background-color: var(--basic-extra-light);
          width: 1440px;
          height: 416px;
+         position: absolute;
+         
          }
 
-       .wrapper {
-        background-color:  var(--basic-dark);
-        background-image: url(img/nerds-index-slide1.jpg);
-        width: 760px;
-        height: 431px;
-        left: 537px;
-        top: 114px;
-        position: absolute;
-        
-       }
-       .container-wrapper {
-        background-color: var(--basic-extra-light);
-        width: 1440px;
-        height: 431px; 
-       }
        .price-range{
         background-color: var(--basic-extra-light);
         width: 260px;
@@ -203,6 +247,7 @@
            height: 50px;
            border-radius: 3px;
            color: var(--basic-white);
+           text-align: center;
          }
 
          .app .order {
@@ -211,6 +256,7 @@
            height: 50px;
            border-radius: 3px;
            color: var(--basic-white); 
+           text-align: center;
            }
          .presentation .order {
            background-color: var(--basic-yellow);
@@ -218,12 +264,13 @@
            height: 50px;
            border-radius: 3px;
            color: var(--basic-white);
+           text-align: center;
          }
          .items {
-             text-transform: uppercase;
+          text-transform: uppercase;
          }
          .items h2+p {
-            text-transform:none;   
+         text-transform:none;   
          }
          .about-us h2 {
              display: none;
@@ -232,21 +279,36 @@
          font-size: 45px;
          line-height: 45px;
        }
-       .advantages p{
+       .advantages {
            text-transform: uppercase;
         }
+/*Footer*/   
+       .footer-map img:nth-child(2) {
+        position: relative;
+        left: -621px;
+        bottom:140px;
+       }
+
         .footer-address {
          color: var(--basic-black);    
          background-color: var(--basic-white);  
          width: 319px;
          height:308px;
-         text-align: center; 
+         display: block;
+         margin-left: 140px;
+         position: relative;
+         left: 0px;
+         bottom:390px;
+
         }
 
        .social {
-        list-style: none;
+        list-style: none; 
+        margin-left: 100px;
+        margin-right: 1500px;
 
           }
+
         .social a {
            color: var(--basic-black);
         }  
@@ -269,20 +331,19 @@
           text-align: center;
           font-size: 16px;
           line-height: 18px;
-          text-transform: uppercase;
-          margin-left:50px; 
+          text-transform: uppercase; 
           display:inline-block;
 
-            }
+         }
 
         .visually-hidden {
         display: none;
         }
-
+/*catalog*/
         .sedona {
          background-color: var(--basic-dark);
          width:360px;
-         height:40px;
+         height:618px;
         }
 
 
@@ -290,7 +351,29 @@
         .borodinski, .pink, .mishka, .a-study, .kvast {
          background-color: var(--basic-extra-light);
          width:360px;
-         height:40px;          
+         height:618px; }      
+         
+         .product-landing-box {
+         background-color: var(--basic-extra-light);  
+         width: 360px;
+         height: 231px;
+         position: relative;
+         bottom: 144px;
+         display: block;
+         top: -240px;
+        
+         }
+         
+         .products-landing-button {
+        background-color: var(--basic-red);
+        width: 200px;
+        height: 50px;
+        border-radius: 3px;
+        position: relative;
+        top: 44px;
+        left: 80px;
+        color: var(--basic-white);
+        }
 
 
 

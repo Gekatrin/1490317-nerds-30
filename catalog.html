@@ -30,7 +30,7 @@
     </header>
     <main>
         <h1>Магазин готовых шаблонов</h1>
-        <div class="second-header">Магазин готовых шаблонов</div>
+        <div class="second-header"> <span>Магазин готовых шаблонов</span></div>
         <section class="features">
             <h2>Стоимость</h2>
             <form action="" method="post" oninput="pricevalue.value=price.value">
@@ -88,7 +88,13 @@
                     <label for="sedona-slide3"></label>
                 </div>
                 <img src="img/img-sedona.jpg" width="359" height="578" alt="sedona">
+                <div class="product-landing-box">
+                    <p>Sedona</p> 
+                    <p>Информационный сайт для туристов</p>
+                    <span><p class="products-landing-button"><a href="#">990</a></p></span>
+                </div> 
             </div>
+           
             <div class="pink">
                 <input type="radio" name="point" id="pink-slide1" checked>
                 <input type="radio" name="point" id="pink-slide2">
@@ -104,6 +110,7 @@
                     <label for="pink-slide3"></label>
                 </div>
                 <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
+                </div>
             </div>
             <div class="borodinski">
                 <input type="radio" name="point" id="borodinski-slide1" checked>
@@ -182,14 +189,13 @@
     <footer class="main-footer">
         <div class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="map">
             <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
-        </div>
-
-        <div class="footer-address">
-            <p> NЁRDS DESIGN STUDIO </p>
-            <p> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><br>
-                тел. +7 (812) 275-75-75</p>
+           <div class="footer-address">
+            <p>NЁRDS DESIGN STUDIO </p> <br>
+            <p>191185, Санкт-Петербург,</p> 
+            <p>ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
             <div class="contact-us">
-                <a class="contact-us" href="#">Напишите нам</a>
+            <a class="contact-us" href="#">Напишите нам</a>
             </div>
         </div>
         <ul class="social">
@@ -203,8 +209,8 @@
             <li><a class="social-button" href="#"><img src="img/logo-circle.svg" alt="logo-circle"><span
                         class="visually-hidden">Инстаграмм</span>
                     <div class="logo">
-                    </div>
                 </a></li>
+            </div>
         </ul>
         <p style="font-size:36px; line-height: 36px;"> Давайте дружить, это выгодно!<br> </p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
