@@ -13,8 +13,8 @@
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
-    <header>
+<body class="main-body">
+    <header class="header">
         <div class="first-header">
             <div class="main-header-logo"><a href="index.html">
                     <svg width="160" height="66" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
             <a class="site-cart" href="">Корзина</a>
         </div>
     </header>
-    <main class="container">
+    <main>
         <h1> Интернет магазин «Nerds»</h1>
         <section class="services">
             <div class="container-wrapper">
@@ -85,36 +85,54 @@
             </div>
         </section>
         <section class="about-us">
-            <h2> О нас </h2>
-            <p class="about-us description"> Мы — маленькая, но гордая<br>веб-студия из Краснодара </p>
-            <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-                превыше креатива. Работаем не покладая рук, как роботы </p>
-            <h2>Выполняем заказы на разработку</h2>
-            <ul class="our-services">
-                <li> Веб-сайтов любой сложности </li>
-                <li> Мобильных приложений на IOS и Android </li>
-                <li> Слайдшоу и видео для корпоративных презентаций </li>
-            </ul>
-            <div> <img src="img/nerds-illustration.png" width="360" height="208" alt="nerds-illustration"> </div>
-            <p class="advantages"> с 2004 года Любим точность во всем:</p>
-            <div><span style="font-size: 45px;line-height: 64px;">146</span><span
-                    style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Уровень<br>самоотдачи</div>
-            <div><span style="font-size: 45px;line-height: 64px;">100</span><span
-                    style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Соблюдение<br>сроков</div>
-            <div><span style="font-size: 45px;line-height: 64px;">50</span><span
-                    style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Минимальная<br>предоплата</div>
+            <div class="description-grid">
+                <div class="description-grid-1">
+                    <h2> О нас </h2>
+                    <p class="description-slogan"> Мы — маленькая, но гордая<br>веб-студия из Краснодара </p>
+                    <p> Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+                        превыше креатива. Работаем не покладая рук, как роботы </p>
+                </div>
+                <div class="description-grid-2">
+                    <h2>Выполняем заказы на разработку</h2>
+                    <ul class="our-services">
+                        <li> Веб-сайтов любой сложности </li>
+                        <li> Мобильных приложений на IOS и Android </li>
+                        <li> Слайдшоу и видео для корпоративных презентаций </li>
+                    </ul>
+                </div>
+                <div class="description-grid-3"> <img src="img/nerds-illustration.png" width="360" height="208"
+                        alt="nerds-illustration"> </div>
+                <div class="description-grid-4">
+                    <h3 class="advantages"> с 2004 года Любим точность во всем:</h3>
+                    <ul class="efficiency">
+                        <li><span style="font-size: 45px;line-height: 64px;">146</span><span
+                                style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Уровень<br>самоотдачи
+                        </li>
+
+                        <li><span style="font-size: 45px;line-height: 64px;">100</span><span
+                                style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Соблюдение<br>сроков
+                        </li>
+                        <li><span style="font-size: 45px;line-height: 64px;">50</span><span
+                                style="font-size: 26px; line-height: 40px;"><sup>%</sup></span><br>Минимальная<br>предоплата
+                        </li>
+                    </ul>
+                </div>
 
 
-            <ul class="product-info">
-                <li><a class="product-logo" href="#"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="htmlacademy-logo">
-                    </a></li>
-                <li><a class="product-logo"  href="#"><img src="img/logo-borodinski.png" width="209" height="90" alt="logo-borodinski">
-                    </a></li>
-                <li><a class="product-logo" href="#"><img src="img/pink-logo.png" width="185" height="52" alt="logo-pink">
-                    </a></li>
-                <li><a class="product-logo" href="#"><img src="img/logo-mishka.png" width="173" height="84" alt="logo-mishka">
-                    </a></li>
-            </ul>
+                <ul class="product-info">
+                    <li><a class="product-logo" href="#"><img src="img/htmlacademy-logo.png" width="199" height="68"
+                                alt="htmlacademy-logo">
+                        </a></li>
+                    <li><a class="product-logo" href="#"><img src="img/logo-borodinski.png" width="209" height="90"
+                                alt="logo-borodinski">
+                        </a></li>
+                    <li><a class="product-logo" href="#"><img src="img/pink-logo.png" width="185" height="52"
+                                alt="logo-pink">
+                        </a></li>
+                    <li><a class="product-logo" href="#"><img src="img/logo-mishka.png" width="173" height="84"
+                                alt="logo-mishka">
+                        </a></li>
+                </ul>
         </section>
     </main>
     <footer class="main-footer">
@@ -137,9 +155,9 @@
                     </a></li>
                 <li class="social-button"><a href="#"><span class="visually-hidden">Инстаграмм</span>
                     </a></li>
-        </ul>
-        <p style="font-size:36px; line-height: 36px;"> Давайте дружить, это выгодно!<br> </p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+            </ul>
+            <p style="font-size:36px; line-height: 36px;"> Давайте дружить, это выгодно!<br> </p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
 </body>
 
