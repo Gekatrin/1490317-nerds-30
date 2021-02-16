@@ -171,7 +171,8 @@ grid-column-end: 3;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows; 1fr:
   grid-column-gap:20px;
-  margin-top: 80px; 
+  margin: 80px 100px 25px 140px; 
+
 }
 
          .second-header {
@@ -198,6 +199,8 @@ grid-column-end: 3;
          }
          .products h2 {
           text-transform: uppercase;
+          margin: 54px;
+          margin-left: 0px;
 
         }
          .services-slogan {
@@ -244,7 +247,7 @@ grid-column-end: 3;
         .know-more {
           background-color: var(--basic-red);
           width: 240px;
-          height: 50px;
+          height: 35px;
           color: var(--basic-white);
           text-align: center;
           font-size: 16px;
@@ -255,8 +258,9 @@ grid-column-end: 3;
           top: 415px;
           border-radius: 3px;
           margin-left: 140px;
-          display: flex;
-          justify-content: space-around;
+          display: block;
+          padding-top: 15px;
+
          }
 
          .know-more:hover {
@@ -326,36 +330,39 @@ grid-column-end: 3;
          .web-site .order {
            background-color: var(--basic-red);
            width: 160px;
-           height: 50px;
+           height: 35px;
            border-radius: 3px;
            color: var(--basic-white);
            text-align: center;
            font-size: 16px;
            font-weight: 500;
            line-height: 18px;
+           padding-top: 15px;
            }
 
          .app .order {
            background-color: var(--basic-green);
            width: 160px;
-           height: 50px;
+           height: 35px;
            border-radius: 3px;
            color: var(--basic-white); 
            text-align: center;
            font-size: 16px;
            font-weight: 500;
            line-height: 18px;
+           padding-top: 15px;
            }
          .presentation .order {
            background-color: var(--basic-yellow);
            width: 160px;
-           height: 50px;
+           height: 35px;
            border-radius: 3px;
            color: var(--basic-white);
            text-align: center;
            font-size: 16px;
            font-weight: 500;
            line-height: 18px;
+           padding-top: 15px;
          }
          .items {
           text-transform: uppercase;
@@ -380,13 +387,15 @@ grid-column-end: 3;
            list-style: none;
            display: flex;
            justify-content: start;
-         }
+          }
+
 
          .description-grid {
          display: grid;
          grid-template-columns:  750px 418px;
          grid-template-rows: 1fr 1fr ;
          grid-column-start: auto;
+         margin: 0 140px;
          }
         
         .description-grid-1 {
@@ -418,8 +427,10 @@ grid-column-end: 3;
          list-style: none;
          display: flex;
          justify-content: space-between;
-         
+         width: 1158px;
+      
        }
+
 
 
 
@@ -461,9 +472,22 @@ grid-column-end: 3;
          position: relative;
          left: 0px;
          bottom:390px;
+         text-align: center;
 
         }
+        .footer-address p:first-child {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 30px;
+          text-transform: none;
 
+        }
+        .footer-address p:nth-child(2){
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18px;
+          color: var(--basic-dark);
+        }
        .social {
         list-style: none; 
         margin-left: 100px;
@@ -491,7 +515,7 @@ grid-column-end: 3;
           background-color: var(--basic-red);
           border-radius: 3px;
           width:  219px;
-          height: 50px;
+          height: 35px;
           color: var(--basic-white);
           text-align: center;
           font-size: 16px;
@@ -499,6 +523,7 @@ grid-column-end: 3;
           line-height: 18px;
           text-transform: uppercase; 
           display:inline-block;
+          padding-top: 10px;
          }
 
          .contact-us a{
@@ -526,11 +551,35 @@ grid-column-end: 3;
 
         }
 
+        .select {
+          width: 358px;
+          height: 100%;
+          margin: 54px 141px 0 auto; 
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: space-between;
+       
+        }
+
+        .select p:nth-child(2),
+        .select p:nth-child(3)
+         {
+          opacity: 0.3;
+        }
+
+        .price-range {
+          margin-top:48px;
+        }
+
         .features {
           grid-column-start: 1;
           grid-column-end: 2;
           grid-row-start: 2;
           grid-row-end: 3;
+          margin: 36px auto auto 140px;
         }
 
         .products {
@@ -555,6 +604,7 @@ grid-column-end: 3;
          grid-column-end: 2;
          grid-row-start: 2;
          grid-row-end: 3;
+         margin-bottom: 31px;
         }
 
         .pink {
@@ -569,6 +619,7 @@ grid-column-end: 3;
           grid-column-end: 2;
           grid-row-start: 3;
           grid-row-end: 4; 
+          margin-bottom: 31px;
         }
         .mishka {
           grid-column-start: 2;
@@ -588,6 +639,7 @@ grid-column-end: 3;
           grid-column-end: 2;
           grid-row-start: 4;
           grid-row-end: 5; 
+          margin-bottom: 31px;
         }
       
         .controls {
@@ -642,12 +694,13 @@ grid-column-end: 3;
          .products-landing-button {
         background-color: var(--basic-red);
         width: 200px;
-        height: 50px;
+        height: 35px;
         border-radius: 3px;
         position: relative;
         top: 44px;
         left: 80px;
         text-align: center;
+        padding-top: 12px;
         }
         .products-landing-button a {
         color: var(--basic-white);
