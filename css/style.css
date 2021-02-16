@@ -138,6 +138,7 @@
          width:1440px; 
          margin-bottom: -50px;
          grid-column-start: 2;
+      
  
          }
          .header{
@@ -460,6 +461,7 @@ grid-column-end: 3;
        }
        .footer-map {
          display: block;
+   
        }
 
         .footer-address {
@@ -490,13 +492,24 @@ grid-column-end: 3;
         }
        .social {
         list-style: none; 
-        margin-left: 100px;
-        margin-right: 1500px;
+        margin: -270px 1500px auto 130px;; 
         width: 270px;
         display: flex;
-        justify-content: space-around;
+       justify-content: space-around;
 
-          }
+      }
+      .final-text {
+       display: block;
+       margin: -130px auto auto 530px;
+      }
+
+      .final-text p:first-child {
+        font-size:36px; 
+        line-height: 36px;
+        font-weight: 700;
+      }
+
+
 
         .social a {
            color: var(--basic-black);
@@ -507,8 +520,39 @@ grid-column-end: 3;
           background-color: var(--basic-extra-light);
           border-radius: 50%;
 
+        }
+
+        .social-button {
+          width: 81px;
+          height: 81px;
+          background-color: var(--basic-extra-light);
+          border-radius: 50%;
+         }
+         .social-button:hover {
+          background-color: var(--basic-red);
+         }
+
+         .social-button:focus {
+          background-color: var(--basic-red);
+          box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+         }
+
+         .social a:first-child {
+           background-image: url(../img/vk-icon.png);
+           background-repeat: no-repeat;
+
+         }
+         .social a:nth-child(2) {
+          background-image: url(../img/facebook-icon.png);
+          background-repeat: no-repeat;
 
         }
+        .social a:nth-child(3) {
+          background-image: url(../img/insta-icon.png);
+          background-repeat: no-repeat;
+
+        }
+
 
         .contact-us {
           color: var(--basic-white);
@@ -530,17 +574,11 @@ grid-column-end: 3;
           color: var(--basic-white); 
          }
 
-         .social-button {
-          width: 81px;
-          height: 81px;
-          background-color: var(--basic-extra-light);
-          border-radius: 50%;
-         }
-
-
         .visually-hidden {
         display: none;
         }
+
+
 /*catalog*/
 
         .main-catalog {
