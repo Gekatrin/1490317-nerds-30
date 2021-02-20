@@ -51,6 +51,9 @@
 .main-header-logo  {
   display: block;
   margin-left: 140px;
+  position: relative;
+  top: 47px;
+  left: 2px;
 
 }
      .site-navigation {
@@ -62,16 +65,20 @@
        font-size: 16px;
        line-height: 30px;
        font-weight: 500;
+       position: relative;
+       bottom: 15px;
+       left: -35px;
          }
 
         .site-cart {
         text-transform: uppercase;  
         position: relative;
-        left: 1200px;
-        top: -50px;
+        left: 1226px;
+        top: -63px;
         font-size: 16px;
         line-height: 30px;
         font-weight: 500;
+
         }
 
 
@@ -86,7 +93,7 @@
 
          .site-navigation li {
            display: inline; 
-           margin-right: 45px;
+           margin-right: 40px;
             
          }
          
@@ -147,19 +154,22 @@
 
 /*Services*/
 
+
 .items {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows; 1fr:
   grid-column-gap:20px;
-  margin: 80px 100px 25px 140px; 
+  margin: 80px 100px 25px 120px; 
   width: 1100px;
+  border-bottom: var(--basic-extra-light) solid 1px;
+  padding-bottom: 80px;
 
 }
 
          .second-header {
          background-color: var(--basic-extra-light);
-         height:241px; 
+         height:209px; 
          width:100%;
          text-align: center;
          font-family: "Roboto", Arial, sans-serif;
@@ -168,7 +178,8 @@
          line-height: 55px;
          display: flex;
          flex-direction: column;
-         justify-content:space-around;
+         justify-content:center;
+         padding-bottom: 32px;
          grid-column-start: 1;
          grid-column-end: 4;
          grid-row-start: 1;
@@ -190,6 +201,8 @@
            font-size: 55px;
            font-weight: 500;
            line-height: 55px;
+           position: relative;
+           top: 80px;
          }
          .services-slogan-description {
           display: block; 
@@ -197,6 +210,8 @@
           font-size: 15px;
           font-weight: 400;
           line-height: 24px;
+          position: relative;
+          top: 67px;
          }
 
          h1 {
@@ -211,10 +226,10 @@
           background-image: url(../img/nerds-index-slide1.png);
           width: 760px;
           height: 427px;
-          left: 1380px;
-          top: 114px;
-          position: absolute;
-          right: 143px;
+          left: 542px;
+          top: -263px;
+          position: relative;
+      
 
   
          }
@@ -242,8 +257,8 @@
           font-weight:500;
           line-height: 18px;
           text-transform: uppercase;
-          left: 140px;
-          top: 415px;
+          position: relative;
+          top: 87px;
           border-radius: 3px;
           margin-left: 140px;
           display: block;
@@ -260,6 +275,7 @@
           background-color: var(--basic-red);
           box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);  
           }
+
 
         .web-site .order:hover {
         background-color:#E74246;
@@ -326,6 +342,8 @@
            font-weight: 500;
            line-height: 18px;
            padding-top: 15px;
+           position: relative;
+           top: 18px;
            }
 
          .app .order {
@@ -339,6 +357,8 @@
            font-weight: 500;
            line-height: 18px;
            padding-top: 15px;
+           position: relative;
+           top: 18px;
            }
          .presentation .order {
            background-color: var(--basic-yellow);
@@ -351,10 +371,14 @@
            font-weight: 500;
            line-height: 18px;
            padding-top: 15px;
+           position: relative;
+           top: 18px;
          }
          .items {
           text-transform: uppercase;
           margin: 80px auto 80px auto;
+          position: relative;
+          left: -30px;
       
          }
          .items h2{
@@ -368,24 +392,25 @@
 
          .description-slogan {
          font-size: 45px;
-         font-weight: 500;
+         font-weight: bold;
          line-height: 45px;
+         margin-bottom: 30px;
          }
 
          .efficiency {
            list-style: none;
            display: grid;
            grid-template-columns: 120px 120px 120px;
-           grid-template-rows: 74px 37px;
-           /*justify-content: space-between;
-           align-items: start;
-           flex-direction: row;*/
+           grid-template-rows: 50px 50px;
            font-size: 45px;
            line-height: 64px;
            font-weight: 700;
            width: 380px;
            height: 70px;
-           /*outline: 3px solid #666;*/
+          /* outline: 3px solid #666;*/
+           position: relative;
+           top: -40px;
+           left: 20px;
           }
           .efficiency li:first-child {
             grid-column-start: 1;
@@ -428,6 +453,7 @@
          grid-column-start: auto;
          margin: 0 auto;
          width: 1174px;
+        /* justify-items: center; */
          }
         
         .description-grid-1 {
@@ -435,12 +461,26 @@
           grid-column-end: 2;
           grid-row-start: 1;
           grid-row-end: 2; 
+          margin-top: -50px;
+          margin-left: 6px;
         }
+
+
         .description-grid-2 {
           grid-column-start: 1;
           grid-column-end: 2;
           grid-row-start: 2;
           grid-row-end: 3; 
+        }
+
+        }
+        .description-grid-3 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2; 
+          padding-bottom: ;
+
         }
 
          .about-us h2 {
@@ -453,20 +493,43 @@
        }
        .advantages {
            text-transform: uppercase;
-           margin-left: 10px;
+           font-weight: bold;
+           font-size: 16px;
+           line-height: 24px;
+           position: relative;
+           left: 75px;
+           top: -25px;
+           margin-top:30px;
           
+       }
+
+       .our-services {
+        list-style-image: url(../img/list-red.png);
+
+       }
+       .our-services li {
+        margin-bottom: 22px;
+        position: relative;
+        top: -23px;
+        
+       }
+       .our-services li:first-child {
+         left: -30px;
        }
        
        .product-info {
          list-style: none;
          display: flex;
          justify-content: space-between;
+         flex-direction: row;
+         align-items: center;
          width: 1085px;
-         margin:0 0 80px -20px;
          border-top: var(--basic-extra-light) solid 1px;
          border-bottom: var(--basic-extra-light) solid 1px;
          padding: 44px 0 44px 0;
-      
+         margin-top: 20px;
+         margin-bottom: 77px;
+         margin-left: 37px;      
        }
 
        .product-info li:first-child:hover {
@@ -491,7 +554,7 @@
        .footer-map img:nth-child(2) {
         position: relative;
         left: 823px;
-        bottom:336px;
+        bottom:340px;
        }
        .footer-map {
          display: block;
@@ -511,12 +574,13 @@
          margin-top: 100px;
          left: 0px;
          bottom:665px;
-         text-align: center;
+         text-align: left;
          position: relative;
          display: flex;
          flex-direction: column;
          justify-content: flex-start;
          align-items: flex-start;
+
 
                  }
         .footer-address p:first-child {
@@ -524,8 +588,11 @@
           font-size: 18px;
           line-height: 30px;
           text-transform: none;
-          margin-top: 30px;
-          margin-left: 50px;
+          position: relative;
+          top: 30px;
+          left: 50px;
+          /*margin-top: 30px;
+          margin-left: 50px;*/
         
 
         }
@@ -534,27 +601,33 @@
           font-size: 16px;
           line-height: 18px;
           color: var(--basic-dark);
-          margin-left: 50px;
+          position: relative;
+          top: 18px;
+          left: 50px;
         }
        .social {
         list-style: none; 
-        margin: -560px 1500px 76px 130px;; 
+        margin: -560px 1500px 76px 141px;; 
         width: 270px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        top: 13px;
 
       }
       .final-text {
        display: block;
-       margin: -170px auto auto 530px;
+       margin: -150px auto auto 530px;
+       position: relative;
+       bottom: -16px;
       }
 
       .final-text p:first-child {
         font-size:36px; 
         line-height: 36px;
         font-weight: 700;
-        margin-bottom: -10px;
+        margin-bottom: 0px;
       }
 
         .social a {
@@ -574,8 +647,8 @@
           height: 81px;
           background-color: var(--basic-extra-light);
           border-radius: 50%;
-          /*background-size: 50% 50%;*/
           background-position:center;
+
          }
          .social-button:hover {
           background-color: var(--basic-red);
@@ -619,8 +692,10 @@
           text-transform: uppercase; 
           display:inline-block;
           padding-top: 10px;
-          margin-top: 30px;
-          margin-left: 50px;
+          position: relative;
+          top: 41px;
+          left: 55px;
+
          }
 
          .contact-us:hover {
@@ -661,14 +736,21 @@
           text-transform: uppercase;
           display: flex;
           justify-content: space-between;
+          color: var(--basic-extra-light);
+      
        
         }
 
-        .select p:nth-child(2),
-        .select p:nth-child(3)
-         {
-          opacity: 0.3;
+        .select p:hover {
+          color: var(--basic-black);
+          opacity: 0.6;
         }
+        .select p:active
+        {
+         opacity: 1;
+         color: var(--basic-black);
+       }
+
 
         .price-range {
           margin-top:48px;
@@ -688,8 +770,10 @@
           grid-row-start: 2;
           grid-row-end: 3;
           display: grid;
-          grid-template-columns: auto auto ;
+          grid-template-columns: 400px auto ;
           grid-template-rows: auto auto auto auto auto;
+          padding-left: 60px;
+ 
         }
 
 
@@ -743,10 +827,7 @@
         }
       
         .controls {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 5;
-          grid-row-end: 6;
+
         }
 
         .borodinski, .pink, .mishka, .a-study, .kvast {
@@ -838,7 +919,7 @@
           width: 50px;
           height: 50px;
           border-color: none;
-          margin: 30px 0 60px 0;
+          margin: 30px 10px 60px 0;
         }
         
         .page-button-next {
@@ -857,6 +938,8 @@
          color: inherit;
          background-color: transparent;
          cursor: pointer;
+         width: 470px;
+
         }
 
         .invisible-button {
