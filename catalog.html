@@ -38,10 +38,10 @@
         </div>
     </header>
     <main>
-      
-            <h1>Магазин готовых шаблонов</h1>
-            <div class="second-header"> Магазин готовых шаблонов</div>
-            <div class="main-catalog">
+
+        <h1>Магазин готовых шаблонов</h1>
+        <div class="second-header"> Магазин готовых шаблонов</div>
+        <div class="main-catalog">
             <section class="features">
                 <h2>Стоимость</h2>
                 <form action="" method="post" oninput="pricevalue.value=price.value">
@@ -51,35 +51,63 @@
                             value="10000">15000
                     </div>
                     <div class="output-area">
-                        <output name="pricevalue">0</output>
-                    </div>
-                    <div class="check-boxes">
-                        <h2>Сетка:</h2>
-                        <label>
-                            <input type="radio" name="question-one" value="p" checked> Адаптивная;
-                        </label><br>
-                        <label>
-                            <input type="radio" name="question-one" value="b"> Фиксированная;
-                        </label><br>
-                        <label>
-                            <input type="radio" name="question-one" value="b"> Резиновая
-                        </label>
-                        <h2>Особенности</h2>
-                        <input type="checkbox" name="slider" id="slider-field" checked>
-                        <label for="slider-field">Слайдер</label><br>
-                        <input type="checkbox" name="advantages" id="advantages-field">
-                        <label for="advantages-field">Блок преимуществ</label><br>
-                        <input type="checkbox" name="news" id="news-field" checked>
-                        <label for="news-field">Новости</label><br>
-                        <input type="checkbox" name="gallery" id="gallery-field">
-                        <label for="gallery-field">Галерея</label><br>
-                        <input type="checkbox" name="card" id="card-field">
-                        <label for="card-field">Корзина</label><br>
-                    </div>
+                        <output name="pricevalue" for="price">от 0</output>
+                        <output name="pricevalue" for="price">15000</output>
                 </form>
-                <div class="button">
-                    <input class="invisible-button" type="submit" value="Показать">
-                </div>
+        </div>
+        <div class="check-boxes">
+            <h2 class="visually-hidden">Сетка:</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul class="form-list">
+                        <li>
+                            <label>
+                                <input type="radio" name="question-one" value="p" checked> Адаптивная;
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="question-one" value="b"> Фиксированная;
+                            </label>
+                        </li>
+                        <li> <label>
+                                <input type="radio" name="question-one" value="b"> Резиновая
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul class="form-list">
+                        <li><label for="slider-field">
+                                <input type="checkbox" name="slider" id="slider-field" checked>
+                                Слайдер</label>
+                        </li>
+                        <li>
+                            <label for="advantages-field">
+                                <input type="checkbox" name="advantages" id="advantages-field">
+                                Блок преимуществ</label>
+                        </li>
+                        <li>
+                            <label for="news-field">
+                                <input type="checkbox" name="news" id="news-field" checked>
+                                Новости</label>
+                        </li>
+                        <li><label for="gallery-field">
+                                <input type="checkbox" name="gallery" id="gallery-field">
+                                Галерея</label>
+                        </li>
+                        <li><label for="card-field">
+                                <input type="checkbox" name="card" id="card-field">
+                                Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+            <div class="button">
+                <input class="invisible-button" type="submit" value="Показать">
+            </div>
 
             </section>
             <section class="products">
@@ -98,18 +126,12 @@
                     </div>
                 </div>
                 <div class="sedona">
-                    <input type="radio" name="point" id="sedona-slide1" checked>
-                    <input type="radio" name="point" id="sedona-slide2">
-                    <input type="radio" name="point" id="sedona-slide3">
-                    <div class="slider">
-                        <div class="slides sedona-slide1"></div>
-                        <div class="slides sedona-slide2"></div>
-                        <div class="slides sedona-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="sedona-slide1"></label>
-                        <label for="sedona-slide2"></label>
-                        <label for="sedona-slide3"></label>
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
                     </div>
                     <img src="img/img-sedona.jpg" width="359" height="578" alt="sedona">
                     <div class="product-landing-box">
@@ -119,93 +141,63 @@
                     </div>
                 </div>
 
-                <div class="pink">
-                    <input type="radio" name="point" id="pink-slide1" checked>
-                    <input type="radio" name="point" id="pink-slide2">
-                    <input type="radio" name="point" id="pink-slide3">
-                    <div class="slider">
-                        <div class="slides pink-slide1"></div>
-                        <div class="slides pink-slide2"></div>
-                        <div class="slides pink-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="pink-slide1"></label>
-                        <label for="pink-slide2"></label>
-                        <label for="pink-slide3"></label>
-                    </div>
-                    <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
-                </div>
-                <div class="borodinski">
-                    <input type="radio" name="point" id="borodinski-slide1" checked>
-                    <input type="radio" name="point" id="borodinski-slide2">
-                    <input type="radio" name="point" id="borodinski-slide3">
-                    <div class="slider">
-                        <div class="slides borodinski-slide1"></div>
-                        <div class="slides borodinski-slide2"></div>
-                        <div class="slides borodinski-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="borodinski-slide1"></label>
-                        <label for="borodinski-slide2"></label>
-                        <label for="borodinski-slide3"></label>
-                    </div>
-                    <img src="img/img-barbershop.jpg" width="358" height="578" alt="barbershop">
-                </div>
-                <div class="mishka">
-                    <input type="radio" name="point" id="mishka-slide1" checked>
-                    <input type="radio" name="point" id="mishka-slide2">
-                    <input type="radio" name="point" id="mishka-slide3">
-                    <div class="slider">
-                        <div class="slides mishka-slide1"></div>
-                        <div class="slides mishka-slide2"></div>
-                        <div class="slides mishka-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="mishka-slide1"></label>
-                        <label for="mishka-slide2"></label>
-                        <label for="mishka-slide3"></label>
-                    </div>
-                    <img src="img/img-mishka.jpg" width="359" height="578" alt="mishka">
-                </div>
-                <div class="a-study">
-                    <input type="radio" name="point" id="a-study-slide1" checked>
-                    <input type="radio" name="point" id="a-study-slide2">
-                    <input type="radio" name="point" id="a-study-slide3">
-                    <div class="slider">
-                        <div class="slides a-study-slide1"></div>
-                        <div class="slides a-study-slide2"></div>
-                        <div class="slides a-study-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="a-study-slide1"></label>
-                        <label for="a-study-slide2"></label>
-                        <label for="a-study-slide3"></label>
-                    </div>
-                    <img src="img/img-aplus.jpg" width="358" height="578" alt="a-study">
-                </div>
-                <div class="kvast">
-                    <input type="radio" name="point" id="kvast-slide1" checked>
-                    <input type="radio" name="point" id="kvast-slide2">
-                    <input type="radio" name="point" id="kvast-slide3">
-                    <div class="slider">
-                        <div class="slides kvast-slide1"></div>
-                        <div class="slides kvast-slide2"></div>
-                        <div class="slides kvast-slide3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="kvast-slide1"></label>
-                        <label for="kvast-slide2"></label>
-                        <label for="kvast-slide3"></label>
-                    </div>
-                    <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
-                </div>
-                    <form class="invisible-buttons">
-                        <input class="page-button" type="button" value="1">
-                        <input class="page-button" type="button" value="2">
-                        <input class="page-button" type="button" value="3">
-                        <input class="page-button-next" type="button" value="следующая">
-                    </form>
-            </section>
+        <div class="pink">
+            <div class="controls-bar">
+                <ul class="controls">
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                </ul>
+            </div>
+            <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
+        </div>
+        <div class="borodinski">
+            <div class="controls-bar">
+                <ul class="controls">
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                </ul>
+            </div>
+            <img src="img/img-barbershop.jpg" width="358" height="578" alt="barbershop">
+        </div>
+        <div class="mishka">
+            <div class="controls-bar">
+                <ul class="controls">
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                </ul>
+            </div>
+            <img src="img/img-mishka.jpg" width="359" height="578" alt="mishka">
+        </div>
+        <div class="a-study">
+            <div class="controls-bar">
+                <ul class="controls">
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                </ul>
+            </div>
+            <img src="img/img-aplus.jpg" width="358" height="578" alt="a-study">
+        </div>
+        <div class="kvast">
+            <div class="controls-bar">
+                <ul class="controls">
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                    <li class="control-botton"></li>
+                </ul>
+            </div>
+            <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
+        </div>
+        <form class="invisible-buttons">
+            <input class="page-button" type="button" value="1">
+            <input class="page-button" type="button" value="2">
+            <input class="page-button" type="button" value="3">
+            <input class="page-button-next" type="button" value="следующая">
+        </form>
+        </section>
         </div>
     </main>
     <footer>
