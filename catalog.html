@@ -44,71 +44,91 @@
         <div class="main-catalog">
             <section class="features">
                 <h2>Стоимость</h2>
-                <form action="" method="post" oninput="pricevalue.value=price.value">
-                    <div class="price-range">
-                        <label for="price"> </label>
-                        <br>0<input type="range" id="price" name="price" min="0" max="15000" step="1"
-                            value="10000">15000
-                    </div>
-                    <div class="output-area">
-                        <output name="pricevalue" for="price">от 0</output>
-                        <output name="pricevalue" for="price">15000</output>
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item">
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="
+                                width: 30%;
+                                margin-left: 20%
+                              "></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    от <input type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                    до <input type="number" name="max-price" value="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
-        </div>
-        <div class="check-boxes">
-            <h2 class="visually-hidden">Сетка:</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul class="form-list">
-                        <li>
-                            <label>
-                                <input type="radio" name="question-one" value="p" checked> Адаптивная;
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="question-one" value="b"> Фиксированная;
-                            </label>
-                        </li>
-                        <li> <label>
-                                <input type="radio" name="question-one" value="b"> Резиновая
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul class="form-list">
-                        <li><label for="slider-field">
-                                <input type="checkbox" name="slider" id="slider-field" checked>
-                                Слайдер</label>
-                        </li>
-                        <li>
-                            <label for="advantages-field">
-                                <input type="checkbox" name="advantages" id="advantages-field">
-                                Блок преимуществ</label>
-                        </li>
-                        <li>
-                            <label for="news-field">
-                                <input type="checkbox" name="news" id="news-field" checked>
-                                Новости</label>
-                        </li>
-                        <li><label for="gallery-field">
-                                <input type="checkbox" name="gallery" id="gallery-field">
-                                Галерея</label>
-                        </li>
-                        <li><label for="card-field">
-                                <input type="checkbox" name="card" id="card-field">
-                                Корзина</label>
-                        </li>
-                    </ul>
-                </fieldset>
-            </form>
-            <div class="button">
-                <input class="invisible-button" type="submit" value="Показать">
-            </div>
 
+                <div class="check-boxes">
+                    <h2 class="visually-hidden">Сетка:</h2>
+                    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                        <fieldset>
+                            <legend>Сетка:</legend>
+                            <ul class="form-list">
+                                <li class="filter-option filter-radio">
+                                    <label>
+                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="p" checked> Адаптивная;
+                                    </label>
+                                </li class="filter-option filter-radio">
+                                <li>
+                                    <label>
+                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="b"> Фиксированная;
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-radio"> <label>
+                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="b"> Резиновая
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Особенности:</legend>
+                            <ul class="form-list">
+                                <li class="filter-option filter-checkbox">
+                                    <input class="visually-hidden-filter filter-input-checkbox filter-input"
+                                        type="checkbox" name="slider" id="slider-field" checked>
+                                    <label for="slider-field"> Слайдер</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+
+                                    <input class="visually-hidden-filter filter-input-checkbox filter-input"
+                                        type="checkbox" name="advantages" id="advantages-field">
+                                    <label for="advantages-field">Блок преимуществ</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+
+                                    <input class="visually-hidden-filter filter-input-checkbox filter-input"
+                                        type="checkbox" name="news" id="news-field" checked>
+                                    <label for="news-field">Новости</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="visually-hidden-filter filter-input-checkbox filter-input"
+                                        type="checkbox" name="gallery" id="gallery-field">
+                                    <label for="gallery-field">Галерея</label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <input class="visually-hidden-filter filter-input-checkbox filter-input"
+                                        type="checkbox" name="card" id="card-field">
+                                    <label for="card-field">Корзина</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <div class="button">
+                        <input class="invisible-button" type="submit" value="Показать">
+                    </div>
+                </div>
             </section>
             <section class="products">
                 <h2> Сортировать:</h2>
@@ -141,90 +161,84 @@
                     </div>
                 </div>
 
-        <div class="pink">
-            <div class="controls-bar">
-                <ul class="controls">
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                </ul>
-            </div>
-            <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
-        </div>
-        <div class="borodinski">
-            <div class="controls-bar">
-                <ul class="controls">
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                </ul>
-            </div>
-            <img src="img/img-barbershop.jpg" width="358" height="578" alt="barbershop">
-        </div>
-        <div class="mishka">
-            <div class="controls-bar">
-                <ul class="controls">
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                </ul>
-            </div>
-            <img src="img/img-mishka.jpg" width="359" height="578" alt="mishka">
-        </div>
-        <div class="a-study">
-            <div class="controls-bar">
-                <ul class="controls">
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                </ul>
-            </div>
-            <img src="img/img-aplus.jpg" width="358" height="578" alt="a-study">
-        </div>
-        <div class="kvast">
-            <div class="controls-bar">
-                <ul class="controls">
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                    <li class="control-botton"></li>
-                </ul>
-            </div>
-            <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
-        </div>
-        <form class="invisible-buttons">
-            <input class="page-button" type="button" value="1">
-            <input class="page-button" type="button" value="2">
-            <input class="page-button" type="button" value="3">
-            <input class="page-button-next" type="button" value="следующая">
-        </form>
-        </section>
+                <div class="pink">
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
+                    </div>
+                    <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
+                </div>
+                <div class="borodinski">
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
+                    </div>
+                    <img src="img/img-barbershop.jpg" width="358" height="578" alt="barbershop">
+                </div>
+                <div class="mishka">
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
+                    </div>
+                    <img src="img/img-mishka.jpg" width="359" height="578" alt="mishka">
+                </div>
+                <div class="a-study">
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
+                    </div>
+                    <img src="img/img-aplus.jpg" width="358" height="578" alt="a-study">
+                </div>
+                <div class="kvast">
+                    <div class="controls-bar">
+                        <ul class="controls">
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                            <li class="control-botton"></li>
+                        </ul>
+                    </div>
+                    <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
+                </div>
+                <form class="invisible-buttons">
+                    <input class="page-button" type="button" value="1">
+                    <input class="page-button" type="button" value="2">
+                    <input class="page-button" type="button" value="3">
+                    <input class="page-button-next" type="button" value="следующая">
+                </form>
+            </section>
         </div>
     </main>
-    <footer>
-        <div class="main-footer">
-            <div class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="map">
-                <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
-                <div class="footer-address">
-                    <p>NЁRDS DESIGN STUDIO <br>
-                    <p>191185, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8<br><br>
-                        тел. +7 (812) 275-75-75</p>
-                    <div class="contact-us">
-                        <a href="#">Напишите нам</a>
-                    </div>
-                </div>
+    <footer class="main-footer">
+        <div class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="map">
+            <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
+            <div class="footer-address">
+                <p>NЁRDS DESIGN STUDIO <br>
+                <p>191185, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8<br><br>
+                    <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                    <a class="contact-us" href="#">Напишите нам</a>
             </div>
-            <div class="social">
-                <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
-                <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-                </a>
-                <a class="social-button" href="#"><span class="visually-hidden">Инстаграмм</span>
-                </a>
-            </div>
-            <div class="final-text">
-                <p> Давайте дружить, это выгодно!<br> </p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
+        </div>
+        <div class="social">
+            <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
+            <a class="social-button" href="#"><span class="visually-hidden">Инстаграмм</span></a>
+        </div>
+        <div class="final-text">
+            <p> Давайте дружить, это выгодно!<br> </p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
 </body>
