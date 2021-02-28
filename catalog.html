@@ -77,17 +77,20 @@
                             <legend>Сетка:</legend>
                             <ul class="form-list">
                                 <li class="filter-option filter-radio">
-                                    <label>
-                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="p" checked> Адаптивная;
+
+                                    <input class="visually-hidden-filter filter-input-radio filter-input"
+                                        id="responsive" type="radio" name="question-one" value="p" checked> <label
+                                        for="responsive"> Адаптивная;
                                     </label>
                                 </li class="filter-option filter-radio">
-                                <li>
-                                    <label>
-                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="b"> Фиксированная;
+                                <li class="filter-option filter-radio">
+                                    <input class="visually-hidden-filter filter-input-radio filter-input" id="fix"
+                                        type="radio" name="question-one" value="b"><label for="fix"> Фиксированная;
                                     </label>
                                 </li>
-                                <li class="filter-option filter-radio"> <label>
-                                        <input class="visually-hidden-filter filter-input-radio filter-input" type="radio" name="question-one" value="b"> Резиновая
+                                <li class="filter-option filter-radio">
+                                    <input class="visually-hidden-filter filter-input-radio filter-input" id="flexible"
+                                        type="radio" name="question-one" value="b"><label for="flexible"> Резиновая
                                     </label>
                                 </li>
                             </ul>
@@ -212,7 +215,7 @@
                     <img src="img/img-kvast.jpg" width="359" height="578" alt="kvast">
                 </div>
                 <form class="invisible-buttons">
-                    <input class="page-button" type="button" value="1">
+                    <input class="page-button active-botton" type="button" value="1"> 
                     <input class="page-button" type="button" value="2">
                     <input class="page-button" type="button" value="3">
                     <input class="page-button-next" type="button" value="следующая">

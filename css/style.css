@@ -247,17 +247,38 @@
            background-color: var(--basic-white);
            border-radius: 50%;
            margin-bottom: 75px;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
          }
-         .slider-controls .current {
+         .current {
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          border: 10px;
-          border-color: var(--basic-white);
-          background-color: var(--basic-dark);
+          background-color: var(--basic-white);
+          border: 2px solid #C1C1C1;
+          box-sizing: border-box;
+          /* position: relative;
+          top: 3px; */
         }
-        
-
+        .slider-controls {
+          position: relative;
+          top: 318px;
+          left: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 90px;
+          height: 18px;
+          opacity: 0;
+          border-radius: 50%;
+        }
+        .slider-controls-button {
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+        }
 
          .container-wrapper {
           background-color: var(--basic-extra-light);
@@ -483,7 +504,6 @@
          grid-column-start: auto;
          margin: 0 auto;
          width: 1174px;
-        /* justify-items: center; */
          }
         
         .description-grid-1 {
@@ -501,9 +521,9 @@
           grid-column-end: 2;
           grid-row-start: 2;
           grid-row-end: 3; 
-        }
+          }
 
-        }
+ 
         .description-grid-3 {
           grid-column-start: 2;
           grid-column-end: 3;
@@ -538,9 +558,19 @@
        }
 
        .our-services {
-        list-style-image: url(../img/list-red.png);
+        /* list-style-image: url(../img/list-red.png); */
+        list-style: none;
         position: relative;
        }
+       .our-services li::before {
+         content: "-";
+        /* background-image: url(../img/red-rectangle.svg); */
+        width: 10px;
+        height: 2px;
+        background-image: url(../img/red-rectangle.svg);
+        position: relative;
+       }
+
        .our-services li {
         margin-bottom: 22px;
         position: relative;
@@ -784,10 +814,6 @@
        }
 
 
-        /* .price-range {
-          margin-top:48px;
-        } */
-
         .filter-item {
           margin: 0;
           padding: 0;
@@ -820,7 +846,7 @@
             background: #d7dcde;
           }
           .range-controls .bar {
-            width: 70%;
+            width: 100%;
             height: 2px;
             background: #00ca74;
           }
@@ -840,7 +866,7 @@
           }
           
           .range-controls .toggle-min {
-            left: 18px;
+            /* left: 30px; */
           }
           
           .range-controls .toggle-max {
@@ -924,10 +950,18 @@
             user-select: none;
           }
           
-          .filter-input-checkbox:hover + label,
+          /* .filter-input-checkbox:hover + label,
           .filter-input-checkbox:focus + label {
-            color: #283136;
+            border-color: #283136;
             opacity: 0.3;
+          } */
+          .filter-input-checkbox:hover + label::before {
+            border-color: var(--basic-extra-dark);
+            opacity: 1;
+          }
+          .filter-input-checkbox:focus + label::before {
+            border-color: var(--basic-extra-dark);
+            opacity: 0.2;
           }
           
           .filter-input-checkbox + label::before {
@@ -938,19 +972,30 @@
             width: 16px;
             height: 16px;
             border: 2px solid;
-            border-color: #4D4D4D;
+            border-color: var(--basic-extra-dark); 
+            opacity: 0.5;
+         
           }
-          
-          .filter-input-checkbox:checked {
+   
+         .filter-input-checkbox:checked + label::after{
             content: "";
             position: absolute;
             top: 4px;
             left: -38px;
             width: 12px;
             height: 12px;
-            background-image: url("..img/checked-box.svg");
+            background-image: url("..img/checked-box.png");
             background-repeat: no-repeat;
+            z-index: 1;
             background-position: 0 0;
+            border-color: var(--basic-extra-dark);
+            opacity: 0.2;
+            border: 1px, solid;
+          }  
+
+          .filter-input-checkbox:checked + label {
+            opacity: 0.3;
+            
           }
           
           .filter-input-radio + label::before {
@@ -976,6 +1021,13 @@
             opacity: 0.3;
             border-radius: 50%;
           }
+          .filter-input-radio:checked + label {
+            color: #283136;
+            opacity: 0.3;
+          }
+          /* .filter-input-radio:hover +label::before{
+            color: #D7373B;
+          } */
           
           .filter-button {
             padding-right: 30px;
@@ -1201,9 +1253,24 @@
           background-color: var(--basic-extra-light);
           width: 50px;
           height: 50px;
-          border-color: none;
+          border: 0;
           margin: 30px 10px 60px 0;
+          border-radius: 3px;
         }
+        .active-botton {
+          background-color: var(--basic-white);
+          border-color: var(--basic-extra-light);
+          border: 2px, solid;
+          background-image: url(../img/page-active.svg);
+          background-repeat: no-repeat;
+          z-index: 1;
+        }
+
+        /* .page-button:active {
+          background-color: var(--basic-white);
+          border-color: var(--basic-extra-light);
+          border: 2px, solid;
+        }  */
         
         .page-button-next {
           background-color: var(--basic-extra-light);
@@ -1214,6 +1281,8 @@
           line-height: 18px;
           font-weight: 500;
           text-transform: uppercase;
+          border: 0;
+          border-radius: 3px;
         }
         .invisible-buttons {
          padding: 0;
@@ -1244,6 +1313,8 @@
         .page-button:focus {
           background-color: #D5D5D5;
           box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+          color: var(--basic-black);
+          opacity: 0.3;
         }
         .page-button:hover {
           background-color: #DFDFDF;
@@ -1253,6 +1324,8 @@
         .page-button-next:focus {
           background-color: #D5D5D5;
           box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+          color: var(--basic-black);
+          opacity: 0.3;
         }
         .page-button-next:hover {
           background-color: #DFDFDF;     
