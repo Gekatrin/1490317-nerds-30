@@ -92,18 +92,7 @@ img {
   line-height: 30px;
   font-weight: 500;
   display: block;
-  margin-left: 1195px;
-}
-
-.site-cart svg {
-  position: relative;
-  left: -10px;
-}
-
-.site-cart svg:nth-child(2), .site-cart svg:nth-child(3) {
-  position: relative;
-  left: -26px;
-  top: 4px;
+  margin-left: 1210px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -131,6 +120,13 @@ img {
   opacity: 0.3;
 }
 
+
+.site-cart::before {
+  content: url(../img/cart-icon.png);
+  position: relative;
+  right: 24px;
+}
+
 .main-header-logo a:hover {
   opacity: 0.7;
 }
@@ -139,11 +135,11 @@ img {
   opacity: 0.3;
 }
 
-.site-navigation li a:hover {
+.site-navigation a:hover {
   color: var(--basic-red);
 }
 
-.site-navigation li a:active {
+.site-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -248,7 +244,7 @@ h1 {
 .wrapper {
   background-image: url(../img/nerds-index-slide1.png);
   width: 760px;
-  height: 427px;
+  min-height: 427px;
   left: 538px;
   top: -263px;
   position: relative;
@@ -272,7 +268,7 @@ h1 {
 
 .slide {
   width: 18px;
-  height: 18px;
+  min-height: 18px;
   background-color: var(--basic-white);
   border-radius: 50%;
   margin-bottom: 75px;
@@ -284,7 +280,7 @@ h1 {
 
 .current {
   width: 8px;
-  height: 8px;
+  min-height: 8px;
   border-radius: 50%;
   background-color: var(--basic-white);
   border: 2px solid #C1C1C1;
@@ -300,7 +296,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   width: 90px;
-  height: 18px;
+  min-height: 18px;
   opacity: 0;
   border-radius: 50%;
 }
@@ -472,7 +468,7 @@ h1 {
 .main-navigation-wrapper {
   background-color: var(--basic-extra-light);
   width: 1440px;
-  height: 416px;
+  min-height: 416px;
   position: absolute;
 }
 
@@ -518,10 +514,18 @@ h1 {
   line-height: 64px;
   font-weight: 700;
   width: 380px;
-  height: 70px;
+  min-height: 70px;
   position: relative;
   top: -40px;
   left: 18px;
+}
+.efficiency span {
+  font-family: inherit;
+  font-size: 26px; 
+  line-height: 40px;
+  font-weight: 700;
+  position: relative;
+  bottom: 15px;
 }
 
 .efficiency li:first-child {
@@ -628,7 +632,7 @@ h1 {
 .our-services li::before {
   content: url(../img/red-rectangle.svg);
   width: 10px;
-  height: 2px;
+  min-height: 2px;
   position: relative;
   bottom: 5px;
   right: 7px;
@@ -778,14 +782,14 @@ h1 {
   color: var(--basic-black);
 }
 
-.logo-background {
+/* .logo-background {
   height: 81px;
   width: 81px;
   background-color: var(--basic-extra-light);
   border-radius: 50%;
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .social-button {
   width: 81px;
@@ -871,7 +875,7 @@ h1 {
 .select {
   width: 358px;
   height: 100%;
-  margin: 54px 141px 0 auto;
+  margin: 50px 141px 0 auto;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1017,6 +1021,7 @@ h1 {
 }
 
 .filter legend {
+
   margin-bottom: 26px;
   font-size: 24px;
   line-height: 30px;
@@ -1168,6 +1173,9 @@ h1 {
   top: 10px;
   opacity: 0.2;
 }
+.up-down svg {
+  margin-left: 15px;
+}
 
 .up-down:hover {
   opacity: 0.5;
@@ -1179,23 +1187,25 @@ h1 {
 
 .controls-bar {
   width: 360px;
-  height: 40px;
+  height: 35px;
   background-color: var(--basic-extra-light);
   opacity: 0.5;
   border-radius: 3px;
   position: relative;
   top: 5px;
+  margin-bottom: 5px;
 }
 
 .sedona .controls-bar {
-  background-color: var(--basic-dark);
+  background-color: #4D4D4D;
   border-radius: 3px;
-  height: 40px;
+  min-height: 35px;
+
 }
 
 .control-botton {
   width: 14px;
-  height: 14px;
+  min-height: 14px;
   border-radius: 50%;
   background-color: var(--basic-white);
   justify-content: flex-start;
@@ -1273,12 +1283,17 @@ h1 {
   border: 1px solid;
   border-color: var(--basic-extra-light);
   border-radius: 3px;
+  margin-bottom: -5px;
+}
+
+.sedona img {
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .product-landing-box {
   background-color: var(--basic-extra-light);
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   position: relative;
   bottom: 144px;
   display: block;
@@ -1350,7 +1365,7 @@ h1 {
   border-radius: 3px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 35px;
 }
 
 .button:hover {
@@ -1364,7 +1379,7 @@ h1 {
 
 .page-button {
   background-color: var(--basic-extra-light);
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   border: 0;
   margin: 30px 10px 60px 0;
@@ -1383,7 +1398,7 @@ h1 {
 .page-button-next {
   background-color: var(--basic-extra-light);
   min-width: 260px;
-  min-height: 50px;
+  height: 50px;
   border-color: none;
   font-size: 16px;
   line-height: 18px;
@@ -1493,7 +1508,7 @@ h1 {
 
 .popup-box label {
   width: 380px;
-  height: 80px;
+  min-height: 80px;
   display: block;
   font-size: 16px;
   line-height: 18px;
