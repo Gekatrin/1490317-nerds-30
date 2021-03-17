@@ -242,70 +242,90 @@ h1 {
 }
 
 .wrapper {
-  background-image: url(../img/nerds-index-slide1.png);
   width: 760px;
   min-height: 427px;
   left: 538px;
   top: -263px;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  top: -330px;
 }
+
+/*Slider*/
 
 .slider {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 90px;
-  justify-content: space-between;
-  align-items: flex-end;
   position: relative;
-  left: 97px;
-  top: -7px;
+  top: 5px;
 }
 
-.slide {
-  width: 18px;
-  min-height: 18px;
-  background-color: var(--basic-white);
-  border-radius: 50%;
-  margin-bottom: 75px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.slider input[type="radio"] {
+width: 25px;
+position: relative;
+top: 375px;
+left: 142px;
+z-index: 2;
+opacity: 0;
 }
 
-.current {
-  width: 8px;
-  min-height: 8px;
-  border-radius: 50%;
-  background-color: var(--basic-white);
-  border: 2px solid #C1C1C1;
-  box-sizing: border-box;
+.slider-inner {
+  overflow: hidden;
+}
+
+.slider-slides {
+  width: 400%;
+  transition: transform 0.8s ease;
+  position: relative;
+}
+
+.slider-slides img {
+  float: left;
+  width: 760px;
+  height: 431px;
+  margin-right: 10px;
+ z-index: -2;
 }
 
 .slider-controls {
-  position: relative;
-  top: 318px;
-  left: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90px;
-  min-height: 18px;
-  opacity: 0;
-  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.slider-controls-button {
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  top: 353px;
+  left:-200px;
+  z-index: 1;
 }
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #666666;
+  border: 4px solid #FFFFFF;
+}
+
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-763px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-1527px);
+}
+
+/*Slider end*/
 
 .container-wrapper {
   background-color: var(--basic-extra-light);
@@ -516,7 +536,7 @@ h1 {
   width: 380px;
   min-height: 70px;
   position: relative;
-  top: -40px;
+  top: -55px;
   left: 18px;
 }
 .efficiency span {
@@ -606,6 +626,16 @@ h1 {
 .about-us h2 {
   display: none;
 }
+.description-grid-2 h2 {
+  display: inline;
+  font-weight:bold; 
+  font-size: 16px;
+  line-height: 24px; 
+  text-transform: uppercase;
+  position: relative;
+  top: -23px;
+  left: 5px;
+}
 
 .about-us p:first-child {
   font-size: 45px;
@@ -620,13 +650,14 @@ h1 {
   line-height: 24px;
   position: relative;
   left: 75px;
-  top: -25px;
+  top: -40px;
 }
 
 .our-services {
   list-style: none;
   position: relative;
   left: -25px;
+  top: 5px;
 }
 
 .our-services li::before {
@@ -638,11 +669,6 @@ h1 {
   right: 7px;
 }
 
-.our-services li:first-child:before {
-  opacity: 0;
-  position: relative;
-  left: 25px;
-}
 
 .our-services li {
   margin-bottom: 23px;
@@ -650,10 +676,6 @@ h1 {
   top: -23px;
 }
 
-.our-services li:first-child {
-  left: -35px;
-  list-style: none;
-}
 
 .product-info {
   list-style: none;
@@ -666,7 +688,7 @@ h1 {
   border-top: var(--basic-extra-light) solid 1px;
   border-bottom: var(--basic-extra-light) solid 1px;
   padding: 40px 0 40px 0;
-  margin-top: 30px;
+  margin-top: -6px;
   margin-bottom: 75px;
   margin-left: 40px;
 }
@@ -688,7 +710,7 @@ h1 {
 .footer-map img:nth-child(2) {
   position: relative;
   left: 823px;
-  bottom: 340px;
+  bottom: 333px;
 }
 
 .footer-map {
@@ -700,7 +722,9 @@ h1 {
 
 .footer-map iframe {
   height: 416px;
+  width: 100%;
 }
+
 
 .main-footer {
   margin: 0 auto;
@@ -731,7 +755,7 @@ h1 {
   line-height: 30px;
   text-transform: none;
   position: relative;
-  top: 30px;
+  top: 35px;
   left: 50px;
 }
 
@@ -759,7 +783,7 @@ h1 {
 
 .final-text {
   display: block;
-  margin: -145px auto auto 540px;
+  margin: -140px auto auto 540px;
   position: relative;
 }
 
@@ -887,12 +911,17 @@ h1 {
   cursor: pointer;
 }
 
-.select p:hover {
+.select a {
+  color: var(--basic-extra-light); 
+  margin-top: 10px;
+}
+
+.select a:hover {
   color: var(--basic-black);
   opacity: 0.6;
 }
 
-.select p:active {
+.select a:active {
   opacity: 1;
   color: var(--basic-black);
 }
@@ -1054,10 +1083,10 @@ h1 {
   position: absolute;
   left: -42px;
   top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid;
-  border-color: var(--basic-extra-dark);
+  width: 17px;
+  height: 17px;
+  border: 3px solid;
+  border-color: #4d4d4d;
   opacity: 0.5;
 }
 
@@ -1073,7 +1102,7 @@ h1 {
 }
 
 .filter-input-checkbox:checked+label::after {
-  content: url("../img/checked-box.svg");
+  content: url("../img/checked-box-hover.svg");
   position: absolute;
   left: -39px;
 }
@@ -1081,39 +1110,44 @@ h1 {
 .filter-input-checkbox:checked+label {
   opacity: 0.3;
 }
+.filter-input-checkbox:checked+label:hover {
+  opacity: 1;
+}
 
 .filter-input-radio+label::before {
   content: " ";
   position: absolute;
   left: -42px;
   top: -1px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid;
-  border-color: #4D4D4D;
-  opacity: 0.5;
+  width: 18px;
+  height: 18px;
+  border: 4px solid;
+  border-color: #4d4d4d;;
   border-radius: 50%;
+  opacity: 0.7 ;
+}
+.filter-input-radio+label::before:hover {
+  opacity: 1; 
 }
 
 .filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -36px;
-  width: 8px;
-  height: 8px;
-  background-color: #283136;
-  opacity: 0.3;
+  top: 8px;
+  left: -34px;
+  width: 9px;
+  height: 9px;
+  background-color: #4d4d4d;
   border-radius: 50%;
+  opacity: 0.8;
+}
+.filter-input-radio+label::after:hover {
+  opacity: 1; 
 }
 
-.filter-input-radio:hover+label::before {
-  color: #283136;
-  opacity: 1;
-}
 
 .filter-input-radio:hover+label::after {
-  color: #283136;
+  color: #4d4d4d;
   opacity: 1;
 }
 
@@ -1121,10 +1155,27 @@ h1 {
   color: #283136;
   opacity: 0.3;
 }
+.filter-input-radio:checked+label:hover {
+  color: #283136;
+  opacity: 1;
+}
 
 .filter-button {
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.check-boxes {
+  position: relative;
+  top: 10px;
+}
+
+.check-boxes legend {
+  margin-bottom: 11px;
+}
+
+.filter-checkbox {
+  margin-bottom: 26px;
 }
 
 /*filter end*/
@@ -1168,7 +1219,7 @@ h1 {
   font-weight: 400;
 }
 
-.up-down {
+.up-down a {
   position: relative;
   top: 10px;
   opacity: 0.2;
@@ -1177,31 +1228,25 @@ h1 {
   margin-left: 15px;
 }
 
-.up-down:hover {
-  opacity: 0.5;
+.up-down a:hover {
+  opacity: 0.8;
 }
 
-.up-down:active {
+.up-down a:active {
   opacity: 1;
 }
 
 .controls-bar {
   width: 360px;
   height: 35px;
-  background-color: var(--basic-extra-light);
-  opacity: 0.5;
+  background-color: #4D4D4D;
+  opacity: 0.1;
   border-radius: 3px;
   position: relative;
   top: 5px;
   margin-bottom: 5px;
 }
 
-.sedona .controls-bar {
-  background-color: #4D4D4D;
-  border-radius: 3px;
-  min-height: 35px;
-
-}
 
 .control-botton {
   width: 14px;
@@ -1229,7 +1274,6 @@ h1 {
 
 .sedona {
   width: 360px;
-  height: 578px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -1283,23 +1327,35 @@ h1 {
   border: 1px solid;
   border-color: var(--basic-extra-light);
   border-radius: 3px;
-  margin-bottom: -5px;
+  margin-bottom: -260px;
+  position: relative;
 }
 
-.sedona img {
+/* .borodinski img:hover, .pink img:hover, .mishka img:hover, .a-study img:hover, .kvast img:hover, .sedona img:hover {
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
+} */
 
 .product-landing-box {
-  background-color: var(--basic-extra-light);
+  background-color: rgba(0, 0, 0, alpha);
   width: 360px;
-  min-height: 231px;
-  position: relative;
-  bottom: 144px;
+  min-height: 578px;
+  position: relative; 
   display: block;
-  top: -255px;
+  top: -342px;
+  opacity: 0;
+  margin-bottom: -342px;
 }
 
+.product-landing-box:hover {
+  opacity: 1;
+  box-shadow: inset 0 -231px 0 0 #EEEEEE,
+  0 0 20px rgba(0,0,0,0.2);;
+
+}
+
+.controls-bar:hover {
+  opacity: 1; 
+}
 .product-landing-box p:nth-child(2) {
   font-size: 16px;
   line-height: 18px;
@@ -1307,7 +1363,7 @@ h1 {
   text-align: center;
   color: var(--basic-dark);
   position: relative;
-  top: 25px;
+  top: 375px;
 }
 
 .product-landing-box p:first-child {
@@ -1317,7 +1373,8 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  top: 25px;
+  top: 375px;
+  z-index: 1;
 }
 
 .product-landing-box p:first-child:hover {
@@ -1337,10 +1394,11 @@ h1 {
   min-height: 35px;
   border-radius: 3px;
   position: relative;
-  top: 44px;
+  top: 375px;
   left: 80px;
   text-align: center;
   padding-top: 12px;
+  z-index: 1;
 }
 
 .products-landing-button a {
@@ -1352,6 +1410,7 @@ h1 {
 
 .products-landing-button:hover {
   background-color: #E74246;
+  z-index: 1;
 }
 
 .products-landing-button:active {
@@ -1392,7 +1451,6 @@ h1 {
   border: 2px, solid;
   background-image: url(../img/page-active.svg);
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .page-button-next {
@@ -1415,11 +1473,16 @@ h1 {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-  width: 470px;
+  width: 445px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  margin-top: 1px;
+  margin-bottom: -5px;
 }
 
 .invisible-button {
-  padding: 0;
   border: none;
   font: inherit;
   color: inherit;
@@ -1431,6 +1494,15 @@ h1 {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
+}
+
+
+.page-button a{
+  color: var(--basic-black);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
 }
 
 .page-button:focus {
@@ -1444,9 +1516,18 @@ h1 {
   background-color: #DFDFDF;
 }
 
+.page-button-next {
+  position: relative;
+  top: -2px;
+}
+.page-button-next a{
+  color: var(--basic-black);  
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
 .page-button-next:active {
   background-color: #D5D5D5;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: var(--basic-black);
   opacity: 0.3;
 }
