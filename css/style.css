@@ -146,9 +146,9 @@ img {
 
 .first-header {
   background-color: var(--basic-extra-light);
-  min-height: 114px;
+  min-height: 70px;
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto -80px auto;
   padding-bottom: 50px;
 }
 
@@ -331,14 +331,15 @@ opacity: 0;
   background-color: var(--basic-extra-light);
   width: 1440px;
   height: 431px;
-  margin: -95px auto 0 auto;
+  margin: 0 auto;
 }
 
 .container-wrapper-bar {
   background-color: var(--basic-extra-light);
   width: 100%;
   height: 431px;
-  margin: -50px auto 0 auto;
+  margin: 0 auto 0 auto;
+  position: relative;
 }
 
 .know-more {
@@ -710,7 +711,7 @@ opacity: 0;
 .footer-map img:nth-child(2) {
   position: relative;
   left: 823px;
-  bottom: 333px;
+  bottom: -70px;
 }
 
 .footer-map {
@@ -718,11 +719,14 @@ opacity: 0;
   width: 100%;
   height: 416px;
   margin-bottom: 68px;
+  position: absolute;
 }
 
 .footer-map iframe {
   height: 416px;
   width: 100%;
+  position: absolute;
+
 }
 
 
@@ -739,7 +743,7 @@ opacity: 0;
   margin-left: 140px;
   margin-top: 100px;
   left: 0px;
-  bottom: 665px;
+  bottom: 250px;
   text-align: left;
   position: relative;
   display: flex;
@@ -771,19 +775,19 @@ opacity: 0;
 
 .social {
   list-style: none;
-  margin: -11px 1500px 80px 140px;
+  margin: 11px 1500px 80px 140px;
   width: 262px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 13px;
+  top: 450px;
 }
 
 .final-text {
   display: block;
-  margin: -140px auto auto 540px;
+  margin: 400px auto auto 540px;
   position: relative;
 }
 
