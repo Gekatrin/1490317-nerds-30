@@ -5,6 +5,7 @@
   --basic-black: #000000;
   --basic-extra-light: #EEEEEE;
   --basic-dark: #888888;
+  --basic-extra-dark: #283136;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
   --basic-red: #FB565A;
@@ -77,6 +78,7 @@ img {
   position: relative;
   bottom: 14px;
   left: -38px;
+  z-index: 3;
 }
 
 .active svg {
@@ -97,6 +99,7 @@ img {
   font-weight: 500;
   display: block;
   margin-left: 1210px;
+  z-index: 3;
 }
 
 .site-navigation-current a:not([href]) {
@@ -129,6 +132,7 @@ img {
   content: url(../img/cart-icon.png);
   position: relative;
   right: 24px;
+  z-index: 3;
 }
 
 .main-header-logo a:hover {
@@ -230,6 +234,7 @@ img {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  color: var(--basic-extra-darkr);
   position: relative;
   top: 60px;
   font-family: inherit;
@@ -247,16 +252,22 @@ h1 {
   line-height: 55px;
 }
 
-.wrapper {
+.slider-wrapper {
   width: 760px;
   min-height: 421px;
-  left: 538px;
-  top: -263px;
-  position: relative;
-  top: -346px;
+
 }
 
 /*Slider*/
+
+.slider-box {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  top: -495px;
+  left: 530px;
+  z-index: 0;
+}
 
 .slider {
   position: relative;
@@ -340,7 +351,7 @@ opacity: 0;
 .container-wrapper {
   background-color: var(--basic-extra-light);
   width: 1440px;
-  height: 421px;
+  min-height: 421px;
   margin: 0 auto;
 }
 
@@ -404,6 +415,7 @@ opacity: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--basic-extra-dark);
   position: relative;
   top: -5px;
 }
@@ -442,6 +454,7 @@ opacity: 0;
   line-height: 24px;
   font-weight: 400;
   position: relative;
+  color: var(--basic-extra-dark);
   top: -5px;
 }
 
@@ -477,6 +490,7 @@ opacity: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--basic-extra-dark);
   position: relative;
   top: -5px;
 }
@@ -529,8 +543,9 @@ opacity: 0;
 
 .description-slogan {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 45px;
+  color: var(--basic-extra-black);
   margin-bottom: 32px;
   position: relative;
   top: 2px;
@@ -593,6 +608,7 @@ opacity: 0;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  color: var(--basic-extra-dark);
   padding-top: 25px;
 }
 
@@ -619,6 +635,8 @@ opacity: 0;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  color: var(--basic-extra-dark);
+
 }
 
 .description-grid-3 {
@@ -827,6 +845,7 @@ opacity: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #666666;
 }
 
 .social a {
