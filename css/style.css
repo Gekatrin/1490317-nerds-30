@@ -225,6 +225,9 @@ img {
   line-height: 55px;
   position: relative;
   top: 74px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-wrap: break-word;
 }
 
 .services-slogan-description {
@@ -241,6 +244,8 @@ img {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }
 
 h1 {
@@ -355,6 +360,7 @@ opacity: 0;
   width: 1440px;
   min-height: 421px;
   margin: 0 auto;
+  
 }
 
 .container-wrapper-bar {
@@ -790,8 +796,10 @@ opacity: 0;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* outline: 2px solid red; */
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: horizontal;
 }
 
 .footer-address p:first-child {
@@ -800,9 +808,10 @@ opacity: 0;
   line-height: 30px;
   text-transform: none;
   position: relative;
-  top: 35px;
+  top: 34px;
   left: 50px;
   padding: auto;
+  margin-bottom: 50px;
 }
 
 .footer-address p:nth-child(2) {
@@ -811,14 +820,18 @@ opacity: 0;
   line-height: 18px;
   color: var(--basic-dark);
   position: relative;
-  top: 18px;
+  top: -40px;
   left: 50px;
   padding: auto;
 }
 
 .final-footer {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 .social {
@@ -828,17 +841,14 @@ opacity: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  left: 140px;
-  top:-10px ;
+  margin-left: 70px;
+  margin-top: -15px;
 }
 
 .final-text {
   display: block;
-  position: relative;
-  left: 540px;
-  top: -122px;
- 
+  margin-top: -39px;
+  margin-right: 295px;
 }
 
 .final-text p:first-child {
@@ -847,6 +857,7 @@ opacity: 0;
   line-height: 36px;
   font-weight: 700;
   margin-bottom: -9px;
+
 }
 
 .final-text p:nth-child(2) {
