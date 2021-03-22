@@ -109,6 +109,7 @@ img {
   margin-left: 1210px;
   z-index: 3;
   position: absolute;
+
 }
 
 .site-navigation-current a:not([href]) {
@@ -232,7 +233,7 @@ img {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--basic-extra-dark);
+  color: var(--basic-extra-darkr);
   position: relative;
   top: 54px;
   font-family: inherit;
@@ -253,6 +254,7 @@ h1 {
 }
 
 /*Slider*/
+
 
 .slider {
   position: relative;
@@ -378,6 +380,7 @@ h1 {
   font-size: 16px;
   line-height: 24px;
 }
+
 
 .container-wrapper-bar {
   background-color: var(--basic-extra-light);
@@ -683,7 +686,7 @@ h1 {
 .about-us {
   position: relative;
   top: 13px;
-  left: 2px;
+  /* left: 2px; */
   margin-bottom: 15px;
 }
 
@@ -780,7 +783,7 @@ h1 {
   display: block;
   width: 100%;
   margin-bottom: 68px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .footer-map iframe {
@@ -881,6 +884,7 @@ h1 {
   font-weight: 400;
   color: #666666;
   margin-left: 5px;
+  
 }
 
 .social a {
@@ -897,12 +901,14 @@ h1 {
 
 .social-button:hover {
   background-color: var(--basic-red);
+
 }
 
 .social-button:active {
   background-color: var(--special-red-active);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   background-blend-mode: soft-light;
+ 
 }
 
 .social a:first-child {
