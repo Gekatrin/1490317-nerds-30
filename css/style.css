@@ -106,7 +106,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  margin-left: 1210px;
+  margin-left: 1230px;
   z-index: 3;
   position: absolute;
 
@@ -139,8 +139,8 @@ img {
 
 .site-cart::before {
   content: url(../img/cart-icon.png);
-  position: relative;
-  right: 24px;
+  position: absolute;
+  right: 103px;
   z-index: 3;
 }
 
@@ -795,7 +795,7 @@ h1 {
 }
 
 .main-footer {
-  margin: 0;
+width: 100%;
 }
 
 .footer-address {
