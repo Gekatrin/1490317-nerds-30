@@ -106,9 +106,10 @@ img {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  display: block;
   margin-left: 1210px;
   z-index: 3;
+  position: absolute;
+
 }
 
 .site-navigation-current a:not([href]) {
@@ -184,12 +185,11 @@ img {
   border-bottom: var(--basic-extra-light) solid 1px;
   padding-bottom: 60px;
   position: relative;
-  top: -5px;
 }
 
 .second-header {
   background-color: var(--basic-extra-light);
-  - height: 421px;
+  height: 100px;
   width: 100%;
   text-align: center;
   font-family: "Roboto", Arial, sans-serif;
@@ -201,8 +201,8 @@ img {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 119px;
-  padding-bottom: 110px;
+  padding-top: 87px;
+  padding-bottom: 65px;
 }
 
 .products h2 {
@@ -255,16 +255,16 @@ h1 {
 
 /*Slider*/
 
-.slider-wrapper {
+/* .slider-wrapper {
   width: 100%;
-}
+} */
 
 .slider {
   position: relative;
   background-color: var(--basic-extra-light);
   width: 1157px;
   margin: 0 auto;
-  top: 5px;
+  top: -30px;
 }
 
 .slider-body {
@@ -374,26 +374,21 @@ h1 {
   line-height: 55px;
   font-weight: 500;
   position: relative;
-  top: 20px;
+  top: 23px;
+  margin-bottom: 50px;
 }
 
 .slider-item p {
-  margin-top: 25px;
   color: var(--basic-extra-dark);
   font-size: 16px;
   line-height: 24px;
 }
 
-.container-wrapper {
-  width: 1157px;
-  min-height: 421px;
-  margin: 0 auto;
-}
 
 .container-wrapper-bar {
   background-color: var(--basic-extra-light);
   width: 100%;
-  min-height: 431px;
+  min-height: 395px;
   margin: 0 auto 0 auto;
 }
 
@@ -693,7 +688,9 @@ h1 {
 
 .about-us {
   position: relative;
-  top: 5px;
+  top: 13px;
+  left: 2px;
+  margin-bottom: 15px;
 }
 
 .about-us h2 {
@@ -707,8 +704,8 @@ h1 {
   line-height: 24px;
   text-transform: uppercase;
   position: relative;
-  top: -38px;
-  left: 5px;
+  top: -35px;
+  left: 6px;
 }
 
 .about-us p:first-child {
@@ -739,8 +736,8 @@ h1 {
   width: 10px;
   min-height: 2px;
   position: relative;
-  bottom: 5px;
-  right: 7px;
+  bottom: 3px;
+  right: 8px;
 }
 
 .our-services li {
@@ -760,7 +757,7 @@ h1 {
   border-top: var(--basic-extra-light) solid 1px;
   border-bottom: var(--basic-extra-light) solid 1px;
   padding: 40px 0 40px 0;
-  margin-top: -13px;
+  margin-top: -20px;
   margin-bottom: 75px;
   margin-left: 40px;
 }
@@ -869,8 +866,8 @@ h1 {
 
 .final-text {
   display: block;
-  margin-top: -45px;
-  margin-right: 295px;
+  margin-top: -55px;
+  margin-right: 290px;
 }
 
 .final-text p:first-child {
@@ -879,6 +876,7 @@ h1 {
   line-height: 36px;
   font-weight: 700;
   margin-bottom: -5px;
+  margin-top: 45px;
   margin-left: 7px;
 }
 
@@ -889,6 +887,7 @@ h1 {
   font-weight: 400;
   color: #666666;
   margin-left: 5px;
+  
 }
 
 .social a {
@@ -1165,7 +1164,7 @@ h1 {
   width: 17px;
   height: 17px;
   border: 3px solid;
-  border-color: #4d4d4d;
+  border-color: var(--special-hover-grey);
   opacity: 0.5;
 }
 
@@ -1199,10 +1198,10 @@ h1 {
   position: absolute;
   left: -42px;
   top: -1px;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border: 4px solid;
-  border-color: #4d4d4d;
+  border-color: var(--special-hover-grey);
   ;
   border-radius: 50%;
   opacity: 0.7;
@@ -1215,11 +1214,11 @@ h1 {
 .filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: -34px;
   width: 9px;
   height: 9px;
-  background-color: #4d4d4d;
+  background-color: var(--special-hover-grey);
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -1229,7 +1228,7 @@ h1 {
 }
 
 .filter-input-radio:hover+label::after {
-  color: #4d4d4d;
+  color: var(--special-hover-grey);
   opacity: 1;
 }
 
@@ -1318,7 +1317,7 @@ h1 {
 .controls-bar {
   width: 360px;
   height: 35px;
-  background-color: #4D4D4D;
+  background-color: var(--special-hover-grey);
   opacity: 0.1;
   border-radius: 3px;
   position: relative;
@@ -1516,7 +1515,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  top: -10px;
+  top: -15px;
 }
 
 .button:hover {
