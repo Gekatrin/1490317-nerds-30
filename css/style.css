@@ -320,9 +320,10 @@ h1 {
 .slider-item img {
   float: right;
   position: absolute;
-  top: -47px;
+  top: -50px;
   left: 400px;
 }
+
 
 #slide-one:checked~.slider-list .slider-item:nth-child(1) {
   display: block;
