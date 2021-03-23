@@ -367,6 +367,7 @@ h1 {
 
 .slider-item h2 {
   font-family: "Roboto", Arial, sans-serif;
+  color: var(--basic-black);
   font: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -377,7 +378,9 @@ h1 {
 
 .slider-item p {
   color: var(--basic-extra-dark);
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
 }
 
@@ -783,7 +786,7 @@ h1 {
   display: block;
   width: 100%;
   margin-bottom: 68px;
-  /* position: absolute; */
+  position: absolute;
 }
 
 .footer-map iframe {
