@@ -36,7 +36,6 @@ body {
   background-color: var(--basic-white);
   background-position: top center;
   background-repeat: no-repeat;
-  outline: blue solid 2px;
 }
 
 a {
@@ -164,12 +163,12 @@ img {
   width: 1160px;
   margin: 0 auto -80px auto;
   padding-bottom: 50px;
+
 }
 
 .header-bar {
   background-color: var(--basic-extra-light);
   width: 100%;
-  outline: red solid 2px;
 }
 
 /*Services*/
@@ -186,7 +185,6 @@ img {
 }
 
 .second-header {
-  display: block;
   background-color: var(--basic-extra-light);
   height: 100px;
   width: 100%;
@@ -215,11 +213,6 @@ img {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  /* position: relative;
-  top: 74px;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  word-wrap: break-word; */
 }
 
 .services-slogan-description {
@@ -229,8 +222,6 @@ img {
   font-weight: 400;
   line-height: 24px;
   color: var(--basic-extra-darkr);
-  /* position: relative;
-  top: 54px; */
   text-overflow: ellipsis;
   display: -webkit-box;
 }
@@ -251,7 +242,8 @@ h1 {
   background-color: var(--basic-extra-light);
   width: 900px;
   margin: 0 auto;
-  top: -30px;
+  top: -50px;
+
 }
 
 .slider-body {
@@ -261,41 +253,54 @@ h1 {
 }
 
 .slider-controls {
-  font-size: 0;
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90px;
+  height: 18px;
+  opacity: 0;
+  border-radius: 50%;
   z-index: 100;
-  bottom: 104px;
-  left: 50%;
-  width: 160px;
+
+}
+.slider-controls-button {
+  border-radius: 50%;
+  width: 18px;
   height: 18px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  text-align: center;
+
 }
 
-.slider-controls label {
+.slider-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
   position: relative;
-  left: 142px;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  cursor: pointer;
-  vertical-align: top;
-  border-radius: 50%;
-}
+  left: 510px;
+  width: 90px;
 
-.slider-controls label::after {
-  position: absolute;
-  z-index: 1;
-  top: 110px;
-  left: 8px;
+}
+.slide {
   width: 18px;
   height: 18px;
-  content: '';
-  border-radius: 50%;
   background-color: var(--basic-white);
+  border-radius: 50%;
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.current {
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background-color: var(--basic-white);
+ border: 2px solid #C1C1C1;
+ box-sizing: border-box;
+
 }
 
 .slider-list {
@@ -308,6 +313,10 @@ h1 {
   object-fit: contain;
 }
 
+.active{
+  display: block;
+}
+
 .slider-item img {
   float: right;
   position: absolute;
@@ -315,17 +324,7 @@ h1 {
   left: 409px;
 }
 
-#slide-one:checked~.slider-list .slider-item:nth-child(1) {
-  display: block;
-}
 
-#slide-two:checked~.slider-list .slider-item:nth-child(2) {
-  display: block;
-}
-
-#slide-three:checked~.slider-list .slider-item:nth-child(3) {
-  display: block;
-}
 
 #slide-one:checked~.slider-controls .slider-controls-item--1::before, #slide-two:checked~.slider-controls .slider-controls-item--2::before, #slide-three:checked~.slider-controls .slider-controls-item--3::before {
   position: absolute;
@@ -341,7 +340,6 @@ h1 {
   background-color: inherit;
 }
 
-}
 
 .slider-list {
   font-size: 55px;
@@ -378,7 +376,7 @@ h1 {
 .container-wrapper-bar {
   background-color: var(--basic-extra-light);
   width: 100%;
-  min-height: 395px;
+  height: 395px;
   margin: 0 auto 0 auto;
 }
 
@@ -638,7 +636,7 @@ h1 {
 
 .description-grid {
   display: grid;
-  grid-template-columns: 750px 418px;
+  grid-template-columns: 750px 410px;
   grid-template-rows: 1fr 1fr;
   grid-column-start: auto;
   margin: 0 auto;
@@ -708,7 +706,6 @@ h1 {
   font-size: 16px;
   line-height: 24px;
   position: relative;
-  left: 75px;
   top: -50px;
 }
 
@@ -957,7 +954,6 @@ h1 {
 .main-catalog {
   display: grid;
   grid-template-columns: 480px 960px;
-  grid-template-rows: auto auto auto auto;
   margin: 0 auto;
   width: 1160px;
 }
@@ -1246,7 +1242,7 @@ h1 {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin: 10px auto auto 140px;
+  margin: 10px 80px auto auto;
 }
 
 .products {

@@ -6,7 +6,7 @@
     <title> Интернет магазин «Nerds»</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="icon" href="favicon.ico/favicon.png">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -44,16 +44,9 @@
             <div class="container-wrapper-bar">
                 <div class="slider">
                     <div class="slider-body">
-                        <input class="visually-hidden" type="radio" id="slide-one" name="slide-button" checked="">
-                        <input class="visually-hidden" type="radio" id="slide-two" name="slide-button">
-                        <input class="visually-hidden" type="radio" id="slide-three" name="slide-button">
-                        <div class="slider-controls">
-                            <label class="slider-controls-item slider-controls-item--1" for="slide-one">1</label>
-                            <label class="slider-controls-item slider-controls-item--2" for="slide-two">2</label>
-                            <label class="slider-controls-item slider-controls-item--3" for="slide-three">3</label>
-                        </div>
+
                         <ul class="slider-list">
-                            <li class="slider-item">
+                            <li class="slider-item active">
                                 <h2>Долго, дорого,<br>скрупулезно.</h2>
                                 <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                                 <a class="know-more-button" href="#">Узнать больше</a>
@@ -75,8 +68,20 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="wrapper">
+                        <ul class="slider-nav">
+                            <li class="slide"><a class="current" href="#"></a></li>
+                            <li class="slide"><a href="#"></a></li>
+                            <li class="slide"><a href="#"></a></li>
+                        </ul>
+                        <div class="slider-controls">
+                            <button class="current" type="button" aria-label="Первый слайд"></button>
+                            <button class="slider-controls-button" type="button" aria-label="Второй слайд"></button>
+                            <button class="slider-controls-button" type="button" aria-label="Третий слайд"></button>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </section>
         <section class="items">
             <div class="web-site">
